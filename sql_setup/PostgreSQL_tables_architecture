@@ -12,3 +12,7 @@ CREATE TABLE stream_data (
  CREATE TABLE game_data (
  game_id int,
  game_name text);
+
+CREATE TABLE game_tags (
+tag_id int,
+tag_english text);
