@@ -1,0 +1,14 @@
+CREATE TABLE stream_data (
+ id int,
+ user_id int,
+ user_name text,
+ game_id int,
+ type text,
+ title text,
+ viewer_count int,
+ started_at timestamp,
+ language text);
+
+ CREATE TABLE game_data (
+ game_id int,
+ game_name text);

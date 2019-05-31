@@ -1,0 +1,6 @@
+psql \
+   --host=twitchdata.chd4n5ul8muk.us-east-2.rds.amazonaws.com \
+   --port=5432 \
+   --username=postgres \
+   --password \
+   --dbname=twitchdata
