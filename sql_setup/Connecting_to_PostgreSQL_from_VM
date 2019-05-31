@@ -8,7 +8,7 @@ then enter password when prompted
 To point the Python script to the right database from the cloud, you'd run it in the instance, and enter:
 
 
-connection = psycopg2.connect(host="twitchdata.chd4n5ul8muk.us-east-2.rds.amazonaws.com",database="twitchdata", user="postgres", password="OURMASTERPASSWORD")
+connection = psycopg2.connect(host="twitchdata.chd4n5ul8muk.us-east-2.rds.amazonaws.com",database="twitchdata", user="postgres", password="OURMASTERPASSWORD", port=5432)
 
 stream_df.to_sql(name='stream_data', con=connection, if_exists = 'append', index=False)
 
