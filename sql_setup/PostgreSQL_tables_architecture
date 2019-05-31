@@ -1,9 +1,9 @@
 CREATE TABLE stream_data (
- id int,
+ stream_id int,
  user_id int,
  user_name text,
  game_id int,
- type text,
+ stream_type text,
  title text,
  viewer_count int,
  started_at timestamp,
@@ -13,6 +13,6 @@ CREATE TABLE stream_data (
  game_id int,
  game_name text);
 
-CREATE TABLE game_tags (
-tag_id int,
-tag_english text);
+CREATE TABLE game_genres (
+game_name text,
+game_genres text);
