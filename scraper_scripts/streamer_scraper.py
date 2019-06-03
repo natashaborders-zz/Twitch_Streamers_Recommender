@@ -12,6 +12,7 @@ import pprint
 pp = pprint.PrettyPrinter(indent=4)
 
 import psycopg2 as pg
+from sqlalchemy import create_engine
 
 
 # In[2]:
@@ -100,14 +101,15 @@ def run_all():
     df['time_logged'] = curr_time
     passkey_path = "./rds_passkey.txt"
     passkey =  open(passkey_path, "r").read()
-    connection = psycopg2.connect(host="twitchdata.chd4n5ul8muk.us-east-2.rds.amazonaws.com",
-                                  database="twitchdata",
-                                  user="postgres",
-                                  password=passkey, 
-                                  port=5432)
-    df.to_sql(name='stream_data', con=connection, if_exists = 'append', index=False)
-    pass
-
+    # connection = pg.connect(host="twitchdata.chd4n5ul8muk.us-east-2.rds.amazonaws.com",
+    #                               database="twitchdata",
+    #                               user="postgres",
+    #                               password=passkey, 
+    #                               port=5432)
+    
+    engine = create_engine('postgresql://postgres:FwwBFmleh65qYxKxDVb9@twitchdata.chd4n5ul8muk.us-east-2.rds.amazonaws.com:5432/twitchdata')
+    df.to_sql('stream_data', engine, if_exists='append',index=False)
+    engine.dispose()
 
 # In[ ]:
 
