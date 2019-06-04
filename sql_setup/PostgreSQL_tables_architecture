@@ -10,9 +10,10 @@ CREATE TABLE stream_data (
  language text,
  time_logged timestamp);
 
- CREATE TABLE game_data (
+ CREATE TABLE game_information (
  game_id text,
- game_name text);
+ game_name text,
+ pic_url);
 
 CREATE TABLE game_genres (
 game_name text,
