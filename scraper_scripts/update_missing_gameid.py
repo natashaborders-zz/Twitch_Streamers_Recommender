@@ -55,6 +55,8 @@ def get_game_ids(clientID = clientID):
         WHERE game_id NOT IN (SELECT DISTINCT(game_id) FROM game_information) '''
     
     first_100_games = pd_sql.read_sql(query, connection).head(100)['game_id']
+    
+    connection.close()
 
     headers = {'Client-ID': clientID}
     url = '''https://api.twitch.tv/helix/games'''
