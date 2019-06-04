@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[7]:
+# Jeremy Chow 6/4/2019
 
 
 import requests
@@ -13,34 +12,18 @@ pp = pprint.PrettyPrinter(indent=4)
 import psycopg2 as pg
 import pandas.io.sql as pd_sql
 
-
-# # Notebook used to detect games existing in streams data table that are not in the game_information table.
-
-# Twitch Client ID 
-clientID = 'vb2kmh60pt0tee6o2c11ko6n2t1w9a'
-
-
-# In[ ]:
-
-
-# Postgres info to connect (Only for manual queries)
-
-# connection_args = {
-#  "host": "twitchdata.chd4n5ul8muk.us-east-2.rds.amazonaws.com",
-#  "user": "postgres",
-#    "password":"FwwBFmleh65qYxKxDVb9",
-#  "port": 5432,
-#  "dbname": "twitchdata"
-# }
-
+# Notebook used to detect games existing in streams data table that are not in the game_information table.
 
 
 def get_game_ids(clientID = clientID):
     ''' Grabs top 100 games from strem_data table that are not in game_information table,
     then grabs top 100 ID's. Returns request object from Twitch API '''
     
-    # Set up Postgres info to connect and get query for game_ids in regularly updated database that are missing 
 
+    # Twitch Client ID 
+    clientID = 'vb2kmh60pt0tee6o2c11ko6n2t1w9a'
+
+    # Set up Postgres info to connect and get query for game_ids in regularly updated database that are missing 
     connection_args = {
      "host": "twitchdata.chd4n5ul8muk.us-east-2.rds.amazonaws.com",
      "user": "postgres",
@@ -48,16 +31,18 @@ def get_game_ids(clientID = clientID):
      "port": 5432,
      "dbname": "twitchdata"
     }
-
     connection = pg.connect(**connection_args)
 
+    # Query to find missing game_ids from game_information table
     query = '''SELECT DISTINCT(game_id) FROM stream_data
         WHERE game_id NOT IN (SELECT DISTINCT(game_id) FROM game_information) '''
     
     first_100_games = pd_sql.read_sql(query, connection).head(100)['game_id']
     
+    # Close connections after done
     connection.close()
 
+    # Set up request to Twitch API
     headers = {'Client-ID': clientID}
     url = '''https://api.twitch.tv/helix/games'''
     for counter,game in enumerate(first_100_games):
@@ -66,8 +51,10 @@ def get_game_ids(clientID = clientID):
             url += '?id=' + game
         else:
             url += '&id=' + game
+
     r = requests.get(url, headers=headers)
     return r
+
 def push_gameids_to_SQL(r):
     ''' Converts request object r to dataframe, then uses sqlalchemy create_engine object to push to
     SQL. Returns nothing'''
@@ -81,6 +68,7 @@ def push_gameids_to_SQL(r):
 
 
 def push_100_game_ids_to_sql():
+    ''' Find missing game_ids in SQL database and query twitch for them, then update SQL'''
     up_to_100_missing_game_ids = get_game_ids()
     push_gameids_to_SQL(up_to_100_missing_game_ids)
 
