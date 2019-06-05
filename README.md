@@ -49,7 +49,7 @@ The general metric to evaluate the trending games was change in viewership for e
 
 As these rolling averages are computed for each of the top 100 games, they will reflect the potential for a new channel to join in streaming the trending games which are not scaling the number of channels in proportion with increasing viewership.
 
-### Analysis Step 2: Genre is king###
+### Analysis Step 2: Genre is king ###
 
 The next argument in picking what to stream comes with the fact that the majority of streamers coming to Twitch have a favorite genre or a type of game they enjoy playing. To address the desire to stream games in one's genre of choice or similar to the games one prefers, we applied natural language processing to evaluate queries submitted in a search bar to produce recommendations based on genre/games similar to the subject of the query.
 
@@ -59,7 +59,7 @@ The suggested games, while specific to the genre they requested, would still be 
 
 To be able to use the game attributes for suggestions, we used the scraped descriptions of the top games and their differentiating features.
 
-### Analysis Step 3: You're already in the game###
+### Analysis Step 3: You're already in the game ###
 
 The most granular level of recommendations would apply to those who are already a streamer on the platform, and are looking for advice on what to try perhaps as a change from their existing game or content. For these streamers, we would see if their user_id is already contained in our database of top 100 streamers of top 100 games. If it is, we can use their existing streaming history to recommend a game that they have not yet streamed but which is trending and is similar to their existing stream history.
 
