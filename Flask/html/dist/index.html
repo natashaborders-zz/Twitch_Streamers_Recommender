@@ -15,6 +15,9 @@
     <!-- THEME STYLES-->
     <link href="assets/css/main.min.css" rel="stylesheet" />
     <!-- PAGE LEVEL STYLES-->
+    <!-- FILTER BUTTON STYLES-->
+    <link href="../reset.css" rel="stylesheet"/>
+    <link href="./style.css" rel="stylesheet"/>
 </head>
 
 <body class="fixed-navbar">
@@ -375,7 +378,7 @@
                       <div class="ibox bg-success color-white widget-stat">
                           <div class="ibox-body">
                               <h2 class="m-b-5 font-strong">201</h2>
-                              <div class="m-b-5">NEW ORDERS</div><i class="ti-shopping-cart widget-stat-icon"></i>
+                              <div class="m-b-5">Hours Watched</div><i class="ti-shopping-cart widget-stat-icon"></i>
                               <div><i class="fa fa-level-up m-r-5"></i><small>25% higher</small></div>
                           </div>
                       </div>
@@ -384,7 +387,7 @@
                       <div class="ibox bg-info color-white widget-stat">
                           <div class="ibox-body">
                               <h2 class="m-b-5 font-strong">1250</h2>
-                              <div class="m-b-5">UNIQUE VIEWS</div><i class="ti-bar-chart widget-stat-icon"></i>
+                              <div class="m-b-5">Average Viewers</div><i class="ti-bar-chart widget-stat-icon"></i>
                               <div><i class="fa fa-level-up m-r-5"></i><small>17% higher</small></div>
                           </div>
                       </div>
@@ -393,7 +396,7 @@
                       <div class="ibox bg-warning color-white widget-stat">
                           <div class="ibox-body">
                               <h2 class="m-b-5 font-strong">$1570</h2>
-                              <div class="m-b-5">TOTAL INCOME</div><i class="fa fa-money widget-stat-icon"></i>
+                              <div class="m-b-5">Peak Viewers</div><i class="fa fa-money widget-stat-icon"></i>
                               <div><i class="fa fa-level-up m-r-5"></i><small>22% higher</small></div>
                           </div>
                       </div>
@@ -401,7 +404,7 @@
                       <div class="ibox bg-success color-white widget-stat">
                           <div class="ibox-body">
                               <h2 class="m-b-5 font-strong">201</h2>
-                              <div class="m-b-5">NEW ORDERS</div><i class="ti-shopping-cart widget-stat-icon"></i>
+                              <div class="m-b-5">Live Streams</div><i class="ti-shopping-cart widget-stat-icon"></i>
                               <div><i class="fa fa-level-up m-r-5"></i><small>25% higher</small></div>
                           </div>
                       </div>
@@ -410,7 +413,7 @@
                       <div class="ibox bg-info color-white widget-stat">
                           <div class="ibox-body">
                               <h2 class="m-b-5 font-strong">1250</h2>
-                              <div class="m-b-5">UNIQUE VIEWS</div><i class="ti-bar-chart widget-stat-icon"></i>
+                              <div class="m-b-5">Average Channels</div><i class="ti-bar-chart widget-stat-icon"></i>
                               <div><i class="fa fa-level-up m-r-5"></i><small>17% higher</small></div>
                           </div>
                       </div>
@@ -419,7 +422,7 @@
                       <div class="ibox bg-warning color-white widget-stat">
                           <div class="ibox-body">
                               <h2 class="m-b-5 font-strong">$1570</h2>
-                              <div class="m-b-5">TOTAL INCOME</div><i class="fa fa-money widget-stat-icon"></i>
+                              <div class="m-b-5">Games Played</div><i class="fa fa-money widget-stat-icon"></i>
                               <div><i class="fa fa-level-up m-r-5"></i><small>22% higher</small></div>
                           </div>
                       </div>
@@ -496,7 +499,7 @@
                             </div>
                             <div class="ibox-body">
                                 <div id="world-map" style="height: 300px;"></div>
-                                <table class="table table-striped m-t-20 visitors-table">
+                                <!-- <table class="table table-striped m-t-20 visitors-table">
                                     <thead>
                                         <tr>
                                             <th>Country</th>
@@ -583,138 +586,145 @@
                                             </td>
                                         </tr>
                                     </tbody>
-                                </table>
+                                </table> -->
                             </div>
                         </div>
                     </div>
                 </div>
-<!--BEGIN BUTTON FILTER SELECTION-->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="ibox">
-                            <div class="ibox-head">
-                              <style>
-                              .filterDiv {
-                                float: left;
-                                background-color: #2196F3;
-                                color: #ffffff;
-                                width: 100px;
-                                line-height: 100px;
-                                text-align: center;
-                                margin: 2px;
-                                display: none;
-                              }
 
-                              .show {
-                                display: block;
-                              }
-
-                              .container {
-                                margin-top: 20px;
-                                overflow: hidden;
-                              }
-
-                              /* Style the buttons */
-                              .btn {
-                                border: none;
-                                outline: none;
-                                padding: 12px 16px;
-                                background-color: #f1f1f1;
-                                cursor: pointer;
-                              }
-
-                              .btn:hover {
-                                background-color: #ddd;
-                              }
-
-                              .btn.active {
-                                background-color: #666;
-                                color: white;
-                              }
-
-                              </style>
-                                <div class="ibox-title">Genre Selection</div>
-                            </div>
-                            <div class="ibox-body">
-                              <div id="myBtnContainer">
-                                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                                <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-                                <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-                                <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-                                <button class="btn" onclick="filterSelection('colors')"> Colors</button>
-                              </div>
-
-                              <div class="container">
-                                <div class="filterDiv cars">BMW</div>
-                                <div class="filterDiv colors fruits">Orange</div>
-                                <div class="filterDiv cars">Volvo</div>
-                                <div class="filterDiv colors">Red</div>
-                                <div class="filterDiv cars animals">Mustang</div>
-                                <div class="filterDiv colors">Blue</div>
-                                <div class="filterDiv animals">Cat</div>
-                                <div class="filterDiv animals">Dog</div>
-                                <div class="filterDiv fruits">Melon</div>
-                                <div class="filterDiv fruits animals">Kiwi</div>
-                                <div class="filterDiv fruits">Banana</div>
-                                <div class="filterDiv fruits">Lemon</div>
-                                <div class="filterDiv animals">Cow</div>
-                              </div>
-
-                              <script>
-                              filterSelection("all")
-                              function filterSelection(c) {
-                                var x, i;
-                                x = document.getElementsByClassName("filterDiv");
-                                if (c == "all") c = "";
-                                for (i = 0; i < x.length; i++) {
-                                  w3RemoveClass(x[i], "show");
-                                  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-                                }
-                              }
-
-                              function w3AddClass(element, name) {
-                                var i, arr1, arr2;
-                                arr1 = element.className.split(" ");
-                                arr2 = name.split(" ");
-                                for (i = 0; i < arr2.length; i++) {
-                                  if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-                                }
-                              }
-
-                              function w3RemoveClass(element, name) {
-                                var i, arr1, arr2;
-                                arr1 = element.className.split(" ");
-                                arr2 = name.split(" ");
-                                for (i = 0; i < arr2.length; i++) {
-                                  while (arr1.indexOf(arr2[i]) > -1) {
-                                    arr1.splice(arr1.indexOf(arr2[i]), 1);
-                                  }
-                                }
-                                element.className = arr1.join(" ");
-                              }
-
-                              // Add active class to the current button (highlight it)
-                              var btnContainer = document.getElementById("myBtnContainer");
-                              var btns = btnContainer.getElementsByClassName("btn");
-                              for (var i = 0; i < btns.length; i++) {
-                                btns[i].addEventListener("click", function(){
-                                  var current = document.getElementsByClassName("active");
-                                  current[0].className = current[0].className.replace(" active", "");
-                                  this.className += " active";
-                                });
-                              }
-                              </script>
-
-
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-<!--END BUTTON FILTER SELECTION-->
 <!--BEGIN TEST ZONE-->
+<div class="row">
+  <div class="col-lg-12">
+    <div class="ibox">
+      <div class="ibox-head">
+        <div class="ibox-title">Genre Selection (Pick the Genres you want, starts w/all games)</div>
+      </div>
 
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- <link href="../reset.css" rel="stylesheet"/>
+      <link href="./style.css" rel="stylesheet"/> -->
+
+      <div class="ibox-body">
+        <div class="controls">
+          <button type="button" class="control" data-filter="all">All</button>
+          <button type="button" class="control" data-toggle=".Action">Action</button>
+          <button type="button" class="control" data-toggle=".AdventureGame">Adventure</button>
+          <button type="button" class="control" data-toggle=".CardBoardGame">Card/Board Game</button>
+          <button type="button" class="control" data-toggle=".Compilation">Compilation</button>
+          <button type="button" class="control" data-toggle=".Creative">Creative</button>
+          <button type="button" class="control" data-toggle=".DrivingRacingGame">Driving/Racing</button>
+          <button type="button" class="control" data-toggle=".EducationalGame">Educational</button>
+          <button type="button" class="control" data-toggle=".FPS">FPS</button>
+          <button type="button" class="control" data-toggle=".Fighting">Fighting</button>
+          <button type="button" class="control" data-toggle=".FlightSimulator">Flight Simulator</button>
+          <button type="button" class="control" data-toggle=".GamblingGame">Gambling</button>
+          <button type="button" class="control" data-toggle=".HiddenObjects">Hidden Objects</button>
+          <button type="button" class="control" data-toggle=".Horror">Horror</button>
+          <button type="button" class="control" data-toggle=".IRL">IRL</button>
+          <button type="button" class="control" data-toggle=".IndieGame">Indie Game</button>
+          <button type="button" class="control" data-toggle=".MMORPG">MMORPG</button>
+          <button type="button" class="control" data-toggle=".MOBA">MOBA</button>
+          <button type="button" class="control" data-toggle=".Metroidvania">Metroidvania</button>
+          <button type="button" class="control" data-toggle=".NONE">NONE</button>
+          <button type="button" class="control" data-toggle=".OpenWorld">Open World</button>
+          <button type="button" class="control" data-toggle=".Pinball">Pinball</button>
+          <button type="button" class="control" data-toggle=".Platformer">Platformer</button>
+          <button type="button" class="control" data-toggle=".PointandClick">Point and Click</button>
+          <button type="button" class="control" data-toggle=".Puzzle">Puzzle</button>
+          <button type="button" class="control" data-toggle=".RPG">RPG</button>
+          <button type="button" class="control" data-toggle=".RTS">RTS</button>
+          <button type="button" class="control" data-toggle=".RhythmMusicGame">Rhythm & Music</button>
+          <button type="button" class="control" data-toggle=".Roguelike">Roguelike</button>
+          <button type="button" class="control" data-toggle=".SeriesSouls">Series: Souls</button>
+          <button type="button" class="control" data-toggle=".ShootEmUp">Shoot 'Em Up</button>
+          <button type="button" class="control" data-toggle=".Shooter">Shooter</button>
+          <button type="button" class="control" data-toggle=".Simulation">Simulation</button>
+          <button type="button" class="control" data-toggle=".SportsGame">Sports</button>
+          <button type="button" class="control" data-toggle=".Stealth">Stealth</button>
+          <button type="button" class="control" data-toggle=".Strategy">Strategy</button>
+          <button type="button" class="control" data-toggle=".Survival">Survival</button>
+          <button type="button" class="control" data-toggle=".VisualNovel">Visual Novel</button>
+        </div>
+
+        <div class="container">
+          <div class="mix green blue">GAME 1</div>
+          <div class="mix FPS">GAME2</div>
+          <div class="mix PointandClick">POINT AND CLICK</div>
+          <div class="mix PointandClick Strategy">POINT and click/Strategy</div>
+          <div class="mix green pink"></div>
+          <div class="mix Horror">HORROR</div>
+          <div class="mix Card&BoardGame">Card & Board Game</div>
+          <div class="mix blue pink"></div>
+          <div class="mix green blue">GAME 1</div>
+          <div class="mix green"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix green pink"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix blue pink"></div>
+          <div class="mix green blue">GAME 1</div>
+          <div class="mix green"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix green pink"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix blue pink"></div>
+          <div class="mix green blue">GAME 1</div>
+          <div class="mix green"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix green pink"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix blue pink"></div>
+          <div class="mix green blue">GAME 1</div>
+          <div class="mix green"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix green pink"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix blue pink"></div>
+          <div class="mix green blue">GAME 1</div>
+          <div class="mix green"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix green pink"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix blue pink"></div>
+          <div class="mix green blue">GAME 1</div>
+          <div class="mix green"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix green pink"></div>
+          <div class="mix blue"></div>
+          <div class="mix pink"></div>
+          <div class="mix blue pink"></div>
+          <div class="gap"></div>
+          <div class="gap"></div>
+          <div class="gap"></div>
+        </div>
+
+          <script src="../mixitup.min.js"></script>
+
+          <script>
+              var containerEl = document.querySelector('.container');
+
+              var mixer = mixitup(containerEl, {
+                  controls: {
+                      toggleLogic: 'and'
+                  }
+              });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
 <!--END TEST ZONE-->
-
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="ibox">

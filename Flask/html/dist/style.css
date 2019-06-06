@@ -16,17 +16,17 @@ body {
 .controls {
     padding: 1rem;
     background: #333;
-    font-size: 0.1px;
+    font-size: 20px;
 }
-
+/*TOP BUTTON CONTROLS*/
 .control {
     position: relative;
     display: inline-block;
-    width: 2.7rem;
-    height: 2.7rem;
+    width: 8rem;
+    height: 5rem;
     background: #444;
     cursor: pointer;
-    font-size: 0.1px;
+    font-size: 15px;
     color: white;
     transition: background 150ms;
 }
@@ -41,11 +41,11 @@ body {
     position: absolute;
     width: 10px;
     height: 10px;
-    top: calc(50% - 6px);
+    /* top: calc(50% - 6px);
     left: calc(50% - 6px);
     border: 2px solid currentColor;
     border-radius: 2px;
-    background: currentColor;
+    background: currentColor; */
     transition: background-color 150ms, border-color 150ms;
 }
 
@@ -64,7 +64,7 @@ body {
 .control:last-of-type {
     border-radius: 0 3px 3px 0;
 }
-
+/*Need to make one toggle/filter for each genre*/
 .control[data-filter=".green"],
 .control[data-toggle=".green"] {
     color: #91e6c7;
@@ -80,13 +80,274 @@ body {
     color: #d595aa;
 }
 
+/*GENRE TOGGLES*/
+.control[data-filter=".Action"],
+.control[data-toggle=".Action"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".AdventureGame"],
+.control[data-toggle=".AdventureGame"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".CardBoardGame"],
+.control[data-toggle=".CardBoardGame"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Compilation"],
+.control[data-toggle=".Compilation"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Creative"],
+.control[data-toggle=".Creative"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".DrivingRacingGame"],
+.control[data-toggle=".DrivingRacingGame"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".EducationalGame"],
+.control[data-toggle=".EducationalGame"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".FPS"],
+.control[data-toggle=".FPS"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Fighting"],
+.control[data-toggle=".Fighting"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".FlightSimulator"],
+.control[data-toggle=".FlightSimulator"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".GamblingGame"],
+.control[data-toggle=".GamblingGame"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".HiddenObjects"],
+.control[data-toggle=".HiddenObjects"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Horror"],
+.control[data-toggle=".Horror"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".IRL"],
+.control[data-toggle=".IRL"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".IndieGame"],
+.control[data-toggle=".IndieGame"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".MMORPG"],
+.control[data-toggle=".MMORPG"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".MOBA"],
+.control[data-toggle=".MOBA"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Metroidvania"],
+.control[data-toggle=".Metroidvania"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".NONE"],
+.control[data-toggle=".NONE"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".OpenWorld"],
+.control[data-toggle=".OpenWorld"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Pinball"],
+.control[data-toggle=".Pinball"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Platformer"],
+.control[data-toggle=".Platformer"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".PointandClick"],
+.control[data-toggle=".PointandClick"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Puzzle"],
+.control[data-toggle=".Puzzle"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".RPG"],
+.control[data-toggle=".RPG"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".RTS"],
+.control[data-toggle=".RTS"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".RhythmMusicGame"],
+.control[data-toggle=".RhythmMusicGame"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Roguelike"],
+.control[data-toggle=".Roguelike"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".SeriesSouls"],
+.control[data-toggle=".SeriesSouls"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".ShootEmUp"],
+.control[data-toggle=".ShootEmUp"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Shooter"],
+.control[data-toggle=".Shooter"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Simulation"],
+.control[data-toggle=".Simulation"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".SportsGame"],
+.control[data-toggle=".SportsGame"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Stealth"],
+.control[data-toggle=".Stealth"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Strategy"],
+.control[data-toggle=".Strategy"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".Survival"],
+.control[data-toggle=".Survival"]
+{
+color: #91e6c7;
+}
+
+
+.control[data-filter=".VisualNovel"],
+.control[data-toggle=".VisualNovel"]
+{
+color: #91e6c7;
+}
+
+
+
 /* Container
 ---------------------------------------------------------------------- */
-
+/*Games Container*/
 .container {
     padding: 1rem;
     text-align: justify;
-    font-size: 0.1px;
+    font-size: 20px;
 }
 
 .container:after {
@@ -103,7 +364,7 @@ body {
     display: inline-block;
     vertical-align: top;
 }
-
+/*TOP IMAGE BORDER (results area)*/
 .mix {
     background: #fff;
     border-top: .5rem solid currentColor;
@@ -182,5 +443,3 @@ body {
         width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
     }
 }
-
-
