@@ -49,6 +49,7 @@ body {
     transition: background-color 150ms, border-color 150ms;
 }
 
+
 .mixitup-control-active {
     background: #393939;
 }
@@ -339,7 +340,7 @@ color: #91e6c7;
 color: #91e6c7;
 }
 
-
+/*TEST AREA*/
 
 /* Container
 ---------------------------------------------------------------------- */
@@ -348,6 +349,10 @@ color: #91e6c7;
     padding: 1rem;
     text-align: justify;
     font-size: 20px;
+}
+
+.initHidden {
+  display: none;
 }
 
 .container:after {
