@@ -341,7 +341,7 @@ color: #91e6c7;
 }
 
 /*TEST AREA*/
-
+.hidden { display: none; }
 /* Container
 ---------------------------------------------------------------------- */
 /*Games Container*/
