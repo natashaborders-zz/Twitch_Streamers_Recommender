@@ -7,17 +7,19 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Admincast bootstrap 4 &amp; angular 5 admin template, Шаблон админки | Dashboard</title>
     <!-- GLOBAL MAINLY STYLES-->
-    <link href="./assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="./assets/vendors/themify-icons/css/themify-icons.css" rel="stylesheet" />
+    <link href="static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="static/vendors/themify-icons/css/themify-icons.css" rel="stylesheet" />
     <!-- PLUGINS STYLES-->
-    <link href="./assets/vendors/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
+    <link href="static/vendors/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
     <!-- THEME STYLES-->
-    <link href="assets/css/main.min.css" rel="stylesheet" />
+    <link href="static/css/main.min.css" rel="stylesheet" />
     <!-- PAGE LEVEL STYLES-->''
     <!-- FILTER BUTTON STYLES-->
-    <link href="../genre_tags/reset.css" rel="stylesheet"/>
-    <link href="../genre_tags/style.css" rel="stylesheet"/>
+    <!-- Genre Tags -->
+    
+    <link href="static/css/genre_tags/reset.css" rel="stylesheet"/>
+    <link href="static/css/genre_tags/style.css" rel="stylesheet"/>
 
 </head>
 
@@ -67,7 +69,7 @@
                                     <a class="list-group-item">
                                         <div class="media">
                                             <div class="media-img">
-                                                <img src="./assets/img/users/u1.jpg" />
+                                                <img src="static/img/users/u1.jpg" />
                                             </div>
                                             <div class="media-body">
                                                 <div class="font-strong"> </div>Jeanne Gonzalez<small class="text-muted float-right">Just now</small>
@@ -78,7 +80,7 @@
                                     <a class="list-group-item">
                                         <div class="media">
                                             <div class="media-img">
-                                                <img src="./assets/img/users/u2.jpg" />
+                                                <img src="static/img/users/u2.jpg" />
                                             </div>
                                             <div class="media-body">
                                                 <div class="font-strong"></div>Becky Brooks<small class="text-muted float-right">18 mins</small>
@@ -89,7 +91,7 @@
                                     <a class="list-group-item">
                                         <div class="media">
                                             <div class="media-img">
-                                                <img src="./assets/img/users/u3.jpg" />
+                                                <img src="static/img/users/u3.jpg" />
                                             </div>
                                             <div class="media-body">
                                                 <div class="font-strong"></div>Frank Cruz<small class="text-muted float-right">18 mins</small>
@@ -100,7 +102,7 @@
                                     <a class="list-group-item">
                                         <div class="media">
                                             <div class="media-img">
-                                                <img src="./assets/img/users/u4.jpg" />
+                                                <img src="static/img/users/u4.jpg" />
                                             </div>
                                             <div class="media-body">
                                                 <div class="font-strong"></div>Rose Pearson<small class="text-muted float-right">3 hrs</small>
@@ -165,7 +167,7 @@
                     </li>
                     <li class="dropdown dropdown-user">
                         <a class="nav-link dropdown-toggle link" data-toggle="dropdown">
-                            <img src="./assets/img/admin-avatar.png" />
+                            <img src="static/img/admin-avatar.png" />
                             <span></span>Admin<i class="fa fa-angle-down m-l-5"></i></a>
                         <ul class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item" href="profile.html"><i class="fa fa-user"></i>Profile</a>
@@ -185,7 +187,7 @@
             <div id="sidebar-collapse">
                 <div class="admin-block d-flex">
                     <div>
-                        <img src="./assets/img/admin-avatar.png" width="45px" />
+                        <img src="static/img/admin-avatar.png" width="45px" />
                     </div>
                     <div class="admin-info">
                         <div class="font-strong">James Brown</div><small>Administrator</small></div>
@@ -578,10 +580,10 @@
 
         <div class="container">
             <div class="mix green blue">GAME 1</div>
-            <div id="hideme">WAHHHHHHHH</div>
+            <!-- <div id="hideme">WAHHHHHHHH</div>
             <script type="text/javascript">
                 $("#hideme").hide();
-            </script>
+            </script> -->
             <div class="mix FPS">GAME2</div>
             <div class="mix PointandClick">POINT AND CLICK</div>
             <div class="mix PointandClick Strategy">POINT and click/Strategy</div>
@@ -642,7 +644,7 @@
             <div class="gap"></div>
         </div>
 
-          <script src="../genre_tags/mixitup.min.js"></script>
+          <script src="static/js/genre_tags/mixitup.min.js"></script>
           <script>
               var containerEl = document.querySelector('.container');
 
@@ -823,20 +825,20 @@
     </div>
     <!-- END PAGA BACKDROPS-->
     <!-- CORE PLUGINS-->
-    <script src="./assets/vendors/jquery/dist/jquery.min.js" type="text/javascript"></script>
-    <script src="./assets/vendors/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
-    <script src="./assets/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="./assets/vendors/metisMenu/dist/metisMenu.min.js" type="text/javascript"></script>
-    <script src="./assets/vendors/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="static/vendors/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="static/vendors/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
+    <script src="static/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="static/vendors/metisMenu/dist/metisMenu.min.js" type="text/javascript"></script>
+    <script src="static/vendors/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
     <!-- PAGE LEVEL PLUGINS-->
-    <script src="./assets/vendors/chart.js/dist/Chart.min.js" type="text/javascript"></script>
-    <script src="./assets/vendors/jvectormap/jquery-jvectormap-2.0.3.min.js" type="text/javascript"></script>
-    <script src="./assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
-    <script src="./assets/vendors/jvectormap/jquery-jvectormap-us-aea-en.js" type="text/javascript"></script>
+    <script src="static/vendors/chart.js/dist/Chart.min.js" type="text/javascript"></script>
+    <script src="static/vendors/jvectormap/jquery-jvectormap-2.0.3.min.js" type="text/javascript"></script>
+    <script src="static/vendors/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+    <script src="static/vendors/jvectormap/jquery-jvectormap-us-aea-en.js" type="text/javascript"></script>
     <!-- CORE SCRIPTS-->
-    <script src="assets/js/app.min.js" type="text/javascript"></script>
+    <script src="static/js/app.min.js" type="text/javascript"></script>
     <!-- PAGE LEVEL SCRIPTS-->
-    <script src="./assets/js/scripts/dashboard_1_demo.js" type="text/javascript"></script>
+    <script src="static/js/scripts/dashboard_1_demo.js" type="text/javascript"></script>
 </body>
 
 </html>
