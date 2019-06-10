@@ -12,7 +12,7 @@ app = flask.Flask(__name__)
 # to the page http://127.0.0.1:5000/), return a simple
 # page that says the site is up!
 
-@app.route("/", methods=["GET,POST"])
+@app.route("/", methods=["GET"])
 def predict():
     x_input = 0
     predictions = 0

@@ -149,17 +149,21 @@ def make_prediction(streamer_name,streamer_genres,streamer_games):
     games = [algo_game_group.trainset.to_raw_iid(iiid) for iiid in set(game_final_list)]
     #print('The nearest neighbors of your current genres are:' + str(genres))
     #print('The nearest neighbors of your current games are:' + str(games))
-    print("We recommend you stream the following genres: " + ', '.join(item for item in set(genres + genre_user_based_list)))
-    print("We recommend you stream the following games: " + ', '.join(item for item in set(games + game_user_based_list)))
+    print("Recommended genres: " + ', '.join(item for item in set(genres + genre_user_based_list)))
+    print("Recommended games: " + ', '.join(item for item in set(games + game_user_based_list)))
 
     # combined outputs of both methods to produce results common in both
     genre_recommendations = set(genres + genre_user_based_list)
     game_recommendations = set(games + game_user_based_list)
     return_dict = dict()
-    return_dict['streamer_input'] = set(streamer_name,streamer_genres,streamer_games)
+    input_dict = dict()
+    input_dict['streamer_name'] = streamer_name
+    input_dict['streamer_genres'] = streamer_genres
+    input_dict['streamer_games'] = streamer_games
+    input_values = input_dict
     return_dict['genre_recommendations'] = genre_recommendations
     return_dict['game_recommendations'] = game_recommendations
-    return return_dict
+    return input_values,return_dict
 
 if __name__ == '__main__':
     # genres, algo_genre_user, games, algo_game_user = load_models()
@@ -169,7 +173,13 @@ if __name__ == '__main__':
     streamer_games = ['Fortnite']
 
 
-    genres, games = make_prediction(streamer_name,streamer_genres,streamer_games)
-    print(f'Input values: {streamer_name}')
-    print(genres,games)
+    input_values, recommendations = make_prediction(streamer_name,streamer_genres,streamer_games)
+    print('Input Values: ',input_values['streamer_name'],
+                            input_values['streamer_genres'],
+                             input_values['streamer_games']  )
+    # print(f'Input values: {input_values['streamer_name']}')
+    
+    print('Genres: ', recommendations['genre_recommendations'])
+    print('Games: ', recommendations['game_recommendations'])
     # pprint(probs)
+
