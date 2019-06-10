@@ -12,19 +12,7 @@ app = flask.Flask(__name__)
 # to the page http://127.0.0.1:5000/), return a simple
 # page that says the site is up!
 
-
-# @app.route("/", methods=["POST"])
-# def print_piped():
-#     if request.form['mes']:
-#         msg = request.form['mes']
-#         print(msg)
-#         x_input, predictions = make_prediction(str(msg))
-#         flask.render_template('predictor.html',
-#                                 chat_in=x_input,
-#                                 prediction=predictions)
-#     return jsonify(predictions)
-
-@app.route("/", methods=["GET"])
+@app.route("/", methods=["GET,POST"])
 def predict():
     x_input = 0
     predictions = 0
