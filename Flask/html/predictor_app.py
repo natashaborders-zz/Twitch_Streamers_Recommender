@@ -11,6 +11,20 @@ app = flask.Flask(__name__)
 # If they go to the page "/" (this means a GET request
 # to the page http://127.0.0.1:5000/), return a simple
 # page that says the site is up!
+@app.route("/form_basic.html", methods=["GET"])
+def form():
+    x_input = 0
+    predictions = 0
+    return flask.render_template('form_basic.html',
+                                     chat_in=x_input,
+                                     prediction=predictions)
+@app.route("/index.html", methods=["GET"])
+def index():
+    x_input = 0
+    predictions = 0
+    return flask.render_template('index.html',
+                                     chat_in=x_input,
+                                     prediction=predictions)
 
 @app.route("/", methods=["GET"])
 def predict():
