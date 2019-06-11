@@ -4565,7 +4565,7 @@ a.text-danger:hover {
 }
 
 body:not(.fixed-layout).sidebar-mini .content-wrapper {
-    margin-left: 0px
+    margin-left: 60px
 }
 
 body:not(.fixed-layout).sidebar-mini .page-sidebar {
@@ -4687,11 +4687,11 @@ body.fixed-layout.sidebar-mini .content-wrapper {
 
 .content-wrapper {
     position: relative;
-    /* background-color: #f7f7f7;
-    background-color: #f2f2f2; */
+    background-color: #f7f7f7;
+    background-color: #f2f2f2;
     background-color: #6441a5;
-    margin-left: 0px;
-    padding: 5px 15px 25px 15px;
+    margin-left: 220px;
+    padding: 0 15px 60px 15px;
     -webkit-transition: margin .2s ease-in-out;
     -o-transition: margin .2s ease-in-out;
     transition: margin .2s ease-in-out;
@@ -4761,7 +4761,7 @@ body.fixed-navbar .header {
 
 body.fixed-layout .content-wrapper,
 body.fixed-navbar .content-wrapper {
-    padding-top: 0px
+    padding-top: 56px
 }
 
 body.fixed-layout .page-sidebar {

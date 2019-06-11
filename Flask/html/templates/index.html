@@ -11,34 +11,57 @@
     <link href="static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="static/vendors/themify-icons/css/themify-icons.css" rel="stylesheet" />
     <!-- PLUGINS STYLES-->
-    <!-- <link href="static/vendors/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" /> -->
     <!-- THEME STYLES-->
     <link href="static/css/main.min.css" rel="stylesheet" />
     <!-- PAGE LEVEL STYLES-->
-    <!-- FILTER BUTTON STYLES-->
-    <!-- Genre Tags -->
-
-    <link href="static/css/genre_tags/reset.css" rel="stylesheet"/>
-    <link href="static/css/genre_tags/style.css" rel="stylesheet"/>
 
 </head>
 
-<body>
-    <div> <!--class="page-wrapper"-->
-      <!-- START HEADER-->
-      <header class="header">
-          <div class="page-brand">
-              <!-- <a class="link" href="index.html"> -->
-                  <span class="brand">Dream
-                      <span class="brand-tip">Stream</span>
-                  </span>
-                  <span class="brand-mini">DS</span>
-              <!-- </a> -->
-          </div>
-      </header>
+<body class="fixed-navbar">
+    <div class="page-wrapper">
+        <!-- START HEADER-->
+        <header class="header">
+            <div class="page-brand">
+                <a class="link" href="index.html">
+                    <span class="brand">Game
+                        <span class="brand-tip">CAST</span>
+                    </span>
+                    <span class="brand-mini">GC</span>
+                </a>
+            </div>
+            <div class="flexbox flex-1">
+                <!-- START TOP-LEFT TOOLBAR-->
+                <!-- END TOP-LEFT TOOLBAR-->
+                <!-- START TOP-RIGHT TOOLBAR-->
+
+                <!-- END TOP-RIGHT TOOLBAR-->
+            </div>
+        </header>
         <!-- END HEADER-->
         <!-- START SIDEBAR-->
-
+        <nav class="page-sidebar" id="sidebar">
+            <div id="sidebar-collapse">
+                <div class="admin-block d-flex">
+                    <div>
+                        <img src="./assets/img/admin-avatar.png" width="45px" />
+                    </div>
+                    <div class="admin-info">
+                        <div class="font-strong">USERNAME</div><small>BigTimeStrimmer</small></div>
+                </div>
+                <ul class="side-menu metismenu">
+                    <li>
+                        <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-bar-chart"></i>
+                            <span class="nav-label">Stats</span>
+                        </a>
+                    </li>
+                    <li class="heading">FEATURES</li>
+                    <li>
+                        <a href="form_basic.html"><i class="sidebar-item-icon fa fa-edit"></i>
+                            <span class="nav-label">Forms</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <!-- END SIDEBAR-->
         <div class="content-wrapper">
             <!-- START PAGE CONTENT-->
@@ -282,6 +305,12 @@
 
 
 <!--BEGIN GENRE SELECTION ZONE-->
+<!-- FILTER BUTTON STYLES-->
+<!-- Genre Tags -->
+
+<link href="static/css/genre_tags/reset.css" rel="stylesheet"/>
+<link href="static/css/genre_tags/style.css" rel="stylesheet"/>
+
   <div class="row">
     <div class="col-lg-12">
       <div class="ibox">
