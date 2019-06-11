@@ -13,12 +13,19 @@ streamer_genres = list(input ('Which game genres do you currently stream? ').spl
 streamer_games = list(input ('Which games do you currently stream? ').split(', '))
 
 #First, we make sure our records match their inputs and augment as needed:
+with open( "./Data/genres.pkl", "rb" ) as f:
+    genres = pickle.load(f)
+# genres = pickle.load( open( "./Data/genres.pkl", "rb" ) )
 
-genres = pickle.load( open( "./Data/genres.pkl", "rb" ) )
-algo_genre_user = pickle.load( open( "./Data/SlopeOne_genre_model.pkl", "rb" ) )
+# algo_genre_user = pickle.load( open( "./Data/SlopeOne_genre_model.pkl", "rb" ) )
+with open( "./Data/SlopeOne_genre_model.pkl", "rb" ) as f:
+    algo_genre_user = pickle.load(f)
 
-games = pickle.load( open( "./Data/games.pkl", "rb" ) )
-algo_game_user = pickle.load( open( "./Data/BaselineOnly_game_model.pkl", "rb" ) )
+with open( "./Data/games.pkl", "rb" ) as f:
+    games = pickle.load(f)
+
+with open( "./Data/BaselineOnly_game_model.pkl", "rb" ) as f:
+    algo_game_user = pickle.load(f)
 
 def display_current_genres(streamer_name):
     user_genres = list(genres[genres['user_name']==streamer_name]['game_genres'])
