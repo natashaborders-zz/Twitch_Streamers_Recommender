@@ -2,6 +2,13 @@ import flask
 from flask import request
 # from predictor_api import make_prediction
 from flask import jsonify
+import pickle
+
+#load/open pickle file
+with open("surprise.p", "rb") as input_file:
+    e = pickle.load(input_file)
+
+probs = [item for item in e]
 
 # Initialize the app
 
@@ -26,7 +33,9 @@ app = flask.Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def predict():
-    x_input = 0
+    # x_input = 0
+    x_input = probs
+    # y_input = test_list
     predictions = 0
     return flask.render_template('index.html',
                                      chat_in=x_input,
@@ -41,7 +50,7 @@ def predict():
     #     return flask.render_template('predictor.html',
     #                                  chat_in=x_input,
     #                                  prediction=predictions)
-    # else: 
+    # else:
     #     #For first load, request.args will be an empty ImmutableDict type. If this is the case,
     #     # we need to pass an empty string into make_prediction function so no errors are thrown.
     #     x_input, predictions = make_prediction('')
