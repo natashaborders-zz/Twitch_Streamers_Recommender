@@ -1,6 +1,6 @@
 import flask
 from flask import request
-# from predictor_api import make_prediction
+from recommender_api import make_prediction
 from flask import jsonify
 
 # Initialize the app
@@ -15,9 +15,18 @@ app = flask.Flask(__name__)
 def form():
     x_input = 0
     predictions = 0
+    # print(type(request.args))
+    if request.args:
+        # print(list(request.args.keys()))
+        username_in = str(request.args['username_in'])
+        genres_in = str(request.args['genres_in'])
+        games_in = str(request.args['games_in'])
+        input_values, recommendations = make_prediction(username_in, genres_in, games_in)
+
     return flask.render_template('form_basic.html',
-                                     chat_in=x_input,
-                                     prediction=predictions)
+                                     user_input=input_values,
+                                     recommendation=recommendations)
+
 @app.route("/index.html", methods=["GET"])
 def index():
     x_input = 0

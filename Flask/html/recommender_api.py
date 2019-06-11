@@ -52,9 +52,13 @@ def get_top_n(predictions, n=10):
         top_n[uid] = user_ratings[:n]
 
     return top_n
+
 def make_prediction(streamer_name,streamer_genres,streamer_games):
     genres, algo_genre_user, games, algo_game_user = load_models()
 
+    streamer_genres = list(streamer_genres.split(', '))
+    streamer_games = list(streamer_games.split(', '))
+    
     recorder_genre_list = display_current_genres(streamer_name, genres)
     full_genres = set(recorder_genre_list + streamer_genres)
     recorder_game_list = display_current_games(streamer_name, games)
