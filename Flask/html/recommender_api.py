@@ -9,6 +9,7 @@ import pickle
 import surprise
 from surprise import Dataset, accuracy, Reader, NMF, NormalPredictor, BaselineOnly, CoClustering, SlopeOne, SVD, KNNBaseline
 from surprise.model_selection import GridSearchCV, cross_validate, train_test_split
+from fuzzywuzzy import process
 
 # First step is taking the input from the streamer concerning their existing behavior:
 
@@ -53,12 +54,32 @@ def get_top_n(predictions, n=10):
 
     return top_n
 
+def find_fuzzy_matches(input_token,comparison_list):
+    match_ratios = process.extract(input_token,comparison_list,limit=10)
+    return match_ratios
+
+def parse_user_list(user_input_list,unique_items_list):
+    fuzzy_parsed = list()
+    user_input_split = list(user_input_list.split(', '))
+    for token in user_input_split:
+        first_match = find_fuzzy_matches(token,unique_items_list)
+        if first_match[0][1] > 70:
+            fuzzy_parsed.append(find_fuzzy_matches(token,unique_items_list)[0][0])
+    return fuzzy_parsed
+
 def make_prediction(streamer_name,streamer_genres,streamer_games):
     genres, algo_genre_user, games, algo_game_user = load_models()
-
-    streamer_genres = list(streamer_genres.split(', '))
-    streamer_games = list(streamer_games.split(', '))
     
+    print("PRE-FUZZY STREAMER GAMES: ", streamer_games)
+    print("PRE-FUZZY STREAMER GENRES: ", streamer_genres)
+    
+    streamer_genres = parse_user_list(streamer_genres, list(genres['game_genres'].unique()))
+    streamer_games = parse_user_list(streamer_games, list(games['game_name'].unique()))
+    print("STREAMER GAMES: ", streamer_games)
+    print("STREAMER GENRES: ", streamer_genres)
+    # streamer_genres = list(streamer_genres.split(', '))
+    # streamer_games = list(streamer_games.split(', '))
+
     recorder_genre_list = display_current_genres(streamer_name, genres)
     full_genres = set(recorder_genre_list + streamer_genres)
     recorder_game_list = display_current_games(streamer_name, games)
