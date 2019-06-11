@@ -5,7 +5,7 @@ from flask import jsonify
 import pickle
 
 #load/open pickle file
-# with open("surprise.p", "rb") as input_file:
+# with open("save.p", "rb") as input_file:
 #     e = pickle.load(input_file)
 #
 # probs = [item for item in e]
