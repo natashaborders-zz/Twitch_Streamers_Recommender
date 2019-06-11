@@ -1,6 +1,6 @@
 import flask
 from flask import request
-# from predictor_api import make_prediction
+from recommender_api import make_prediction
 from flask import jsonify
 import pickle
 
@@ -18,18 +18,29 @@ app = flask.Flask(__name__)
 # If they go to the page "/" (this means a GET request
 # to the page http://127.0.0.1:5000/), return a simple
 # page that says the site is up!
+@app.route("/form_basic.html", methods=["GET"])
+def form():
+    x_input = 0
+    predictions = 0
+    # print(type(request.args))
+    if request.args:
+        # print(list(request.args.keys()))
+        username_in = str(request.args['username_in'])
+        genres_in = str(request.args['genres_in'])
+        games_in = str(request.args['games_in'])
+        input_values, recommendations = make_prediction(username_in, genres_in, games_in)
 
+    return flask.render_template('form_basic.html',
+                                     user_input=input_values,
+                                     recommendation=recommendations)
 
-# @app.route("/", methods=["POST"])
-# def print_piped():
-#     if request.form['mes']:
-#         msg = request.form['mes']
-#         print(msg)
-#         x_input, predictions = make_prediction(str(msg))
-#         flask.render_template('predictor.html',
-#                                 chat_in=x_input,
-#                                 prediction=predictions)
-#     return jsonify(predictions)
+@app.route("/index.html", methods=["GET"])
+def index():
+    x_input = 0
+    predictions = 0
+    return flask.render_template('index.html',
+                                     chat_in=x_input,
+                                     prediction=predictions)
 
 @app.route("/", methods=["GET"])
 def predict():
