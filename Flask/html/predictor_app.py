@@ -5,10 +5,10 @@ from flask import jsonify
 import pickle
 
 #load/open pickle file
-with open("surprise.p", "rb") as input_file:
-    e = pickle.load(input_file)
-
-probs = [item for item in e]
+# with open("surprise.p", "rb") as input_file:
+#     e = pickle.load(input_file)
+#
+# probs = [item for item in e]
 
 # Initialize the app
 
@@ -20,8 +20,8 @@ app = flask.Flask(__name__)
 # page that says the site is up!
 @app.route("/form_basic.html", methods=["GET"])
 def form():
-    x_input = 0
-    predictions = 0
+    input_values = 0
+    recommendations = 0
     # print(type(request.args))
     if request.args:
         # print(list(request.args.keys()))
@@ -45,7 +45,7 @@ def index():
 @app.route("/", methods=["GET"])
 def predict():
     # x_input = 0
-    x_input = probs
+    x_input = 0
     # y_input = test_list
     predictions = 0
     return flask.render_template('index.html',
