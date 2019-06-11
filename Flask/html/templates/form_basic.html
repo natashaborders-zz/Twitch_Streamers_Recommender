@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title> Recommender | Form</title>
+    <!-- GLOBAL MAINLY STYLES-->
+    <link href="static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="static/vendors/themify-icons/css/themify-icons.css" rel="stylesheet" />
+    <!-- PLUGINS STYLES-->
+    <!-- THEME STYLES-->
+    <link href="static/css/main.min.css" rel="stylesheet" />
+    <!-- PAGE LEVEL STYLES-->
+    
+</head>
+
+<body class="fixed-navbar">
+    <div class="page-wrapper">
+        <!-- START HEADER-->
+        <header class="header">
+            <div class="page-brand">
+                <a class="link" href="index.html">
+                    <span class="brand">Game
+                        <span class="brand-tip">CAST</span>
+                    </span>
+                    <span class="brand-mini">GC</span>
+                </a>
+            </div>
+
+        </header>
+        <!-- END HEADER-->
+        <!-- START SIDEBAR-->
+        <nav class="page-sidebar" id="sidebar">
+            <div id="sidebar-collapse">
+                <div class="admin-block d-flex">
+                    <div>
+                        <img src="./assets/img/admin-avatar.png" width="45px" />
+                    </div>
+                    <div class="admin-info">
+                        <div class="font-strong">USERNAME</div><small>BigTimeStrimmer</small></div>
+                </div>
+                <ul class="side-menu metismenu">
+                    <li>
+                        <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-bar-chart"></i>
+                            <span class="nav-label">Stats</span>
+                        </a>
+                    </li>
+                    <li class="heading">FEATURES</li>
+                    <li>
+                        <a href="form_basic.html"><i class="sidebar-item-icon fa fa-edit"></i>
+                            <span class="nav-label">Forms</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END SIDEBAR-->
+        <div class="content-wrapper">
+            <!-- START PAGE CONTENT-->
+            <div class="page-heading">
+                <h1 class="page-title">Recommender Form</h1>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html"><i class="la la-home font-20"></i></a>
+                    </li>
+                    <li class="breadcrumb-item">Enter information for recommender!</li>
+                </ol>
+            </div>
+            <div class="page-content fade-in-up">
+                        <div class="ibox">
+                            <div class="ibox-head">
+                                <div class="ibox-title">Enter your information!</div>
+                                <div class="ibox-tools">
+                                    <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
+                                    <a class="fullscreen-link"><i class="fa fa-expand"></i></a>
+                                </div>
+                            </div>
+                            <div class="ibox-body">
+                                <form class="form-inline">
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Twitch Username</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name = username_in placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Preferred Genres</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name = genres_in placeholder="Action, Shooter, FPS">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Streamed Games</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name = games_in placeholder="Game1, Game2, Game3">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-10 ml-sm-auto">
+                                            <button class="btn btn-info" type="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                <div class="ibox">
+                    <div class="ibox-head">
+
+                        <div class="ibox-title">Predictions</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ibox-body">
+                            <form class="form-inline">
+                                <div class = "ibox-body">
+                                    <div class="ibox-title">Games</div>      
+                                    <ol>
+                                    {% for game in recommendation['game_recommendations'] %}
+                                    <li> {{game}} </li>
+                                    {% endfor %}
+                                    </ol>
+
+                                    <div class="ibox-title">Genres</div>      
+                                    <ol>
+                                    {% for genre in recommendation['genre_recommendations'] %}
+                                    <li> {{genre}} </li>
+                                    {% endfor %}
+                                    </ol>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div class="ibox"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- END PAGE CONTENT-->
+            <footer class="page-footer">
+                <div class="font-13">2018 © <b>AdminCAST</b> - All rights reserved.</div>
+                <a class="px-4" href="http://themeforest.net/item/adminca-responsive-bootstrap-4-3-angular-4-admin-dashboard-template/20912589" target="_blank">BUY PREMIUM</a>
+                <div class="to-top"><i class="fa fa-angle-double-up"></i></div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- BEGIN PAGA BACKDROPS-->
+    <div class="sidenav-backdrop backdrop"></div>
+    <div class="preloader-backdrop">
+        <div class="page-preloader">Loading</div>
+    </div>
+    <!-- END PAGA BACKDROPS-->
+    <!-- CORE PLUGINS-->
+    <script src="static/vendors/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="static/vendors/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
+    <script src="static/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="static/vendors/metisMenu/dist/metisMenu.min.js" type="text/javascript"></script>
+    <script src="static/vendors/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <!-- PAGE LEVEL PLUGINS-->
+    <!-- CORE SCRIPTS-->
+    <script src="static/js/app.min.js" type="text/javascript"></script>
+    <!-- PAGE LEVEL SCRIPTS-->
+</body>
+
+</html>
