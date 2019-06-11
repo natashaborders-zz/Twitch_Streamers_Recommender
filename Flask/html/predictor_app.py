@@ -13,8 +13,8 @@ app = flask.Flask(__name__)
 # page that says the site is up!
 @app.route("/form_basic.html", methods=["GET"])
 def form():
-    x_input = 0
-    predictions = 0
+    input_values = 0
+    recommendations = 0
     # print(type(request.args))
     if request.args:
         # print(list(request.args.keys()))

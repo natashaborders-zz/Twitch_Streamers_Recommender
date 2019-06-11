@@ -275,37 +275,30 @@
                 
                 <div class="ibox">
                     <div class="ibox-head">
+
                         <div class="ibox-title">Predictions</div>
                     </div>
-                    <div class="ibox-body">
-                        <form class="form-inline">
-                            <div class = "ibox-body">
-                                <div class="ibox-title">Games</div>      
-                                <ol>
-                                {% for game in recommendation['game_recommendations'] %}
-                                <li> {{game}} </li>
-                                {% endfor %}
-                                </ol>
+                    <div class="col-md-6">
+                        <div class="ibox-body">
+                            <form class="form-inline">
+                                <div class = "ibox-body">
+                                    <div class="ibox-title">Games</div>      
+                                    <ol>
+                                    {% for game in recommendation['game_recommendations'] %}
+                                    <li> {{game}} </li>
+                                    {% endfor %}
+                                    </ol>
 
-                                <div class="ibox-title">Genres</div>      
-                                <ol>
-                                {% for genre in recommendation['genre_recommendations'] %}
-                                <li> {{genre}} </li>
-                                {% endfor %}
-                                </ol>
-                                
-                            </div>
-                            <label class="sr-only" for="ex-email">Email</label>
-                            <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="ex-email" type="text" placeholder="Email address">
-                            <label class="sr-only" for="ex-pass">Email</label>
-                            <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="ex-pass" type="password" placeholder="Password">
-                            <div class="form-check mb-2 mr-sm-2 mb-sm-0">
-                                <label class="ui-checkbox ui-checkbox-inline">
-                                    <input type="checkbox">
-                                    <span class="input-span"></span>Remamber me</label>
-                            </div>
-                            <button class="btn btn-success" type="submit">Login</button>
-                        </form>
+                                    <div class="ibox-title">Genres</div>      
+                                    <ol>
+                                    {% for genre in recommendation['genre_recommendations'] %}
+                                    <li> {{genre}} </li>
+                                    {% endfor %}
+                                    </ol>
+                                    
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
