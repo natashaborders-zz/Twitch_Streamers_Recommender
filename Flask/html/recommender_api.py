@@ -55,10 +55,17 @@ def get_top_n(predictions, n=10):
     return top_n
 
 def find_fuzzy_matches(input_token,comparison_list):
+    '''
+    Returns top 10 fuzzy matches and scores as tuples for one token in the comparison_list
+    '''
     match_ratios = process.extract(input_token,comparison_list,limit=10)
     return match_ratios
 
 def parse_user_list(user_input_list,unique_items_list):
+    ''' Takes in tokens in comma separated list, then returns their most similar counterparts
+    in the unique_items_list
+    '''
+
     fuzzy_parsed = list()
     user_input_split = list(user_input_list.split(', '))
     for token in user_input_split:
@@ -67,21 +74,35 @@ def parse_user_list(user_input_list,unique_items_list):
             fuzzy_parsed.append(find_fuzzy_matches(token,unique_items_list)[0][0])
     return fuzzy_parsed
 
+def get_game_pic_urls(game_list):
+    pic_url_list=list()
+    with open( "static/models/pic_url_dict.pkl", "rb" ) as f:
+        games = pickle.load(f)
+    for item in game_list:
+        pic_url_list.append(games[item])
+
+    return pic_url_list
+
 def make_prediction(streamer_name,streamer_genres,streamer_games):
+    '''
+    Given the name of a streamer, list of genres they enter, and a list of games they say
+    they play, generate predictions based on similar genres and similar games to both
+    what they enter into our website and what our database has recorded for them.
+    '''
     genres, algo_genre_user, games, algo_game_user = load_models()
-    
-    print("PRE-FUZZY STREAMER GAMES: ", streamer_games)
-    print("PRE-FUZZY STREAMER GENRES: ", streamer_genres)
-    
+
     streamer_genres = parse_user_list(streamer_genres, list(genres['game_genres'].unique()))
     streamer_games = parse_user_list(streamer_games, list(games['game_name'].unique()))
-    print("STREAMER GAMES: ", streamer_games)
-    print("STREAMER GENRES: ", streamer_genres)
-    # streamer_genres = list(streamer_genres.split(', '))
-    # streamer_games = list(streamer_games.split(', '))
-
+    
+    print("FUZZY MATCHED STREAMER GAMES: ", streamer_games)
+    print("FUZZY MATCHED STREAMER GENRES: ", streamer_genres)
+    
+    # Look at genres of games that the streamer is currently playing using our database
     recorder_genre_list = display_current_genres(streamer_name, genres)
+    # Combine above with the genres the streamer has entered into our website
     full_genres = set(recorder_genre_list + streamer_genres)
+
+    # Repeat above for games
     recorder_game_list = display_current_games(streamer_name, games)
     full_games = set(recorder_game_list + streamer_games)
 
@@ -188,23 +209,25 @@ def make_prediction(streamer_name,streamer_genres,streamer_games):
     input_values = input_dict
     return_dict['genre_recommendations'] = genre_recommendations
     return_dict['game_recommendations'] = game_recommendations
-    return input_values,return_dict
 
+    game_pic_urls = get_game_pic_urls(game_recommendations)
+    game_pic_urls = [x.replace('-{width}x{height}','') for x in game_pic_urls]
+    return input_values,return_dict, game_pic_urls[:5]
+
+# For troubleshooting, pass some default parameters
 if __name__ == '__main__':
-    # genres, algo_genre_user, games, algo_game_user = load_models()
     
     streamer_name = 'Ninja'
-    streamer_genres = ['Action']
-    streamer_games = ['Fortnite']
+    streamer_genres = 'Action'
+    streamer_games = 'Fortnite'
 
 
-    input_values, recommendations = make_prediction(streamer_name,streamer_genres,streamer_games)
+    input_values, recommendations, pic_urls = make_prediction(streamer_name,streamer_genres,streamer_games)
     print('Input Values: ',input_values['streamer_name'],
                             input_values['streamer_genres'],
                              input_values['streamer_games']  )
-    # print(f'Input values: {input_values['streamer_name']}')
     
     print('Genres: ', recommendations['genre_recommendations'])
     print('Games: ', recommendations['game_recommendations'])
-    # pprint(probs)
+    print(pic_urls)
 
