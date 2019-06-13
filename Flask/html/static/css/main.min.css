@@ -4303,7 +4303,25 @@ a.text-danger:hover {
     display: -ms-inline-flexbox;
     display: inline-flex
 }
+/* TEST AREA */
 
+.footer-nav{
+  text-align: center;
+}
+
+.footer-nav li {
+  display: inline-block;
+
+}
+
+.smol {
+  width: 161px;
+  height: 215px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+/* END TEST AREA */
 .header .page-brand .brand-mini {
     display: none
 }
