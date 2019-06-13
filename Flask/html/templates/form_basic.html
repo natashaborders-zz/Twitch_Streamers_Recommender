@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title> Recommedner | Form</title>
+    <title>Admincast bootstrap 4 &amp; angular 5 admin template, Шаблон админки | Dashboard</title>
     <!-- GLOBAL MAINLY STYLES-->
     <link href="static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -14,6 +14,7 @@
     <!-- THEME STYLES-->
     <link href="static/css/main.min.css" rel="stylesheet" />
     <!-- PAGE LEVEL STYLES-->
+
 </head>
 
 <body class="fixed-navbar">
@@ -22,13 +23,19 @@
         <header class="header">
             <div class="page-brand">
                 <a class="link" href="index.html">
-                    <span class="brand">Admin
+                    <span class="brand">Game
                         <span class="brand-tip">CAST</span>
                     </span>
-                    <span class="brand-mini">AC</span>
+                    <span class="brand-mini">GC</span>
                 </a>
             </div>
-            
+            <div class="flexbox flex-1">
+                <!-- START TOP-LEFT TOOLBAR-->
+                <!-- END TOP-LEFT TOOLBAR-->
+                <!-- START TOP-RIGHT TOOLBAR-->
+
+                <!-- END TOP-RIGHT TOOLBAR-->
+            </div>
         </header>
         <!-- END HEADER-->
         <!-- START SIDEBAR-->
@@ -36,187 +43,21 @@
             <div id="sidebar-collapse">
                 <div class="admin-block d-flex">
                     <div>
-                        <img src="static/img/admin-avatar.png" width="45px" />
+                        <img src="./assets/img/admin-avatar.png" width="45px" />
                     </div>
                     <div class="admin-info">
-                        <div class="font-strong">James Brown</div><small>Administrator</small></div>
+                        <div class="font-strong">USERNAME</div><small>BigTimeStrimmer</small></div>
                 </div>
                 <ul class="side-menu metismenu">
                     <li>
-                        <a href="index.html"><i class="sidebar-item-icon fa fa-th-large"></i>
-                            <span class="nav-label">Dashboard</span>
+                        <a class="active" href="index.html"><i class="sidebar-item-icon fa fa-bar-chart"></i>
+                            <span class="nav-label">Stats</span>
                         </a>
                     </li>
                     <li class="heading">FEATURES</li>
                     <li>
-                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-bookmark"></i>
-                            <span class="nav-label">Basic UI</span><i class="fa fa-angle-left arrow"></i></a>
-                        <ul class="nav-2-level collapse">
-                            <li>
-                                <a href="colors.html">Colors</a>
-                            </li>
-                            <li>
-                                <a href="typography.html">Typography</a>
-                            </li>
-                            <li>
-                                <a href="panels.html">Panels</a>
-                            </li>
-                            <li>
-                                <a href="buttons.html">Buttons</a>
-                            </li>
-                            <li>
-                                <a href="tabs.html">Tabs</a>
-                            </li>
-                            <li>
-                                <a href="alerts_tooltips.html">Alerts &amp; Tooltips</a>
-                            </li>
-                            <li>
-                                <a href="badges_progress.html">Badges &amp; Progress</a>
-                            </li>
-                            <li>
-                                <a href="lists.html">List</a>
-                            </li>
-                            <li>
-                                <a href="cards.html">Card</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="active">
-                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-edit"></i>
-                            <span class="nav-label">Forms</span><i class="fa fa-angle-left arrow"></i></a>
-                        <ul class="nav-2-level collapse in">
-                            <li>
-                                <a class="active" href="form_basic.html">Basic Forms</a>
-                            </li>
-                            <li>
-                                <a href="form_advanced.html">Advanced Plugins</a>
-                            </li>
-                            <li>
-                                <a href="form_masks.html">Form input masks</a>
-                            </li>
-                            <li>
-                                <a href="form_validation.html">Form Validation</a>
-                            </li>
-                            <li>
-                                <a href="text_editors.html">Text Editors</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-table"></i>
-                            <span class="nav-label">Tables</span><i class="fa fa-angle-left arrow"></i></a>
-                        <ul class="nav-2-level collapse">
-                            <li>
-                                <a href="table_basic.html">Basic Tables</a>
-                            </li>
-                            <li>
-                                <a href="datatables.html">Datatables</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-bar-chart"></i>
-                            <span class="nav-label">Charts</span><i class="fa fa-angle-left arrow"></i></a>
-                        <ul class="nav-2-level collapse">
-                            <li>
-                                <a href="charts_flot.html">Flot Charts</a>
-                            </li>
-                            <li>
-                                <a href="charts_morris.html">Morris Charts</a>
-                            </li>
-                            <li>
-                                <a href="chartjs.html">Chart.js</a>
-                            </li>
-                            <li>
-                                <a href="charts_sparkline.html">Sparkline Charts</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-map"></i>
-                            <span class="nav-label">Maps</span><i class="fa fa-angle-left arrow"></i></a>
-                        <ul class="nav-2-level collapse">
-                            <li>
-                                <a href="maps_vector.html">Vector maps</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="icons.html"><i class="sidebar-item-icon fa fa-smile-o"></i>
-                            <span class="nav-label">Icons</span>
-                        </a>
-                    </li>
-                    <li class="heading">PAGES</li>
-                    <li>
-                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-envelope"></i>
-                            <span class="nav-label">Mailbox</span><i class="fa fa-angle-left arrow"></i></a>
-                        <ul class="nav-2-level collapse">
-                            <li>
-                                <a href="mailbox.html">Inbox</a>
-                            </li>
-                            <li>
-                                <a href="mail_view.html">Mail view</a>
-                            </li>
-                            <li>
-                                <a href="mail_compose.html">Compose mail</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="calendar.html"><i class="sidebar-item-icon fa fa-calendar"></i>
-                            <span class="nav-label">Calendar</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-file-text"></i>
-                            <span class="nav-label">Pages</span><i class="fa fa-angle-left arrow"></i></a>
-                        <ul class="nav-2-level collapse">
-                            <li>
-                                <a href="invoice.html">Invoice</a>
-                            </li>
-                            <li>
-                                <a href="profile.html">Profile</a>
-                            </li>
-                            <li>
-                                <a href="login.html">Login</a>
-                            </li>
-                            <li>
-                                <a href="register.html">Register</a>
-                            </li>
-                            <li>
-                                <a href="lockscreen.html">Lockscreen</a>
-                            </li>
-                            <li>
-                                <a href="forgot_password.html">Forgot password</a>
-                            </li>
-                            <li>
-                                <a href="error_404.html">404 error</a>
-                            </li>
-                            <li>
-                                <a href="error_500.html">500 error</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><i class="sidebar-item-icon fa fa-sitemap"></i>
-                            <span class="nav-label">Menu Levels</span><i class="fa fa-angle-left arrow"></i></a>
-                        <ul class="nav-2-level collapse">
-                            <li>
-                                <a href="javascript:;">Level 2</a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <span class="nav-label">Level 2</span><i class="fa fa-angle-left arrow"></i></a>
-                                <ul class="nav-3-level collapse">
-                                    <li>
-                                        <a href="javascript:;">Level 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">Level 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <a href="form_basic.html"><i class="sidebar-item-icon fa fa-edit"></i>
+                            <span class="nav-label">Forms</span></a>
                     </li>
                 </ul>
             </div>
@@ -224,117 +65,161 @@
         <!-- END SIDEBAR-->
         <div class="content-wrapper">
             <!-- START PAGE CONTENT-->
-            <div class="page-heading">
-                <h1 class="page-title">Recommender Form</h1>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="index.html"><i class="la la-home font-20"></i></a>
-                    </li>
-                    <li class="breadcrumb-item">Enter information for recommender!</li>
-                </ol>
-            </div>
-            <div class="page-content fade-in-up"> 
-                        <div class="ibox">
-                            <div class="ibox-head">
-                                <div class="ibox-title">Enter your information!</div>
-                                <div class="ibox-tools">
-                                    <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
-                                    <a class="fullscreen-link"><i class="fa fa-expand"></i></a>
-                                </div>
+            <!--START TOP BOX METRICS-->
+            <div class="page-content fade-in-up">
+                <div class="row">
+                  <!--TABLEAU GRAPH BOX START-->
+                  <div class="col-lg-12">
+                    <div class="ibox">
+                      <div class="ibox-head">
+                          <div class="ibox-title">PUT YO DATA HURRR</div>
+                          <div class="ibox-tools">
+                              <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
+                          </div>
+                      </div>
+                          <div class="ibox-body">
+                            <div>
+                              <form>
+                                  <div class="form-group row">
+                                      <label class="col-sm-2 col-form-label">Twitch Username</label>
+                                      <div class="col-sm-4">
+                                          <input class="form-control" type="text" name = username_in placeholder="Username">
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label class="col-sm-2 col-form-label">Preferred Genres</label>
+                                      <div class="col-sm-4">
+                                          <input class="form-control" type="text" name = genres_in placeholder="Action, Shooter, FPS">
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label class="col-sm-2 col-form-label">Streamed Games</label>
+                                      <div class="col-sm-4">
+                                          <input class="form-control" type="text" name = games_in placeholder="Game1, Game2, Game3">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                      <div class="col-sm-10 ml-sm-auto">
+                                          <button class="btn btn-info" type="submit">Submit</button>
+                                      </div>
+                                  </div>
+                              </form>
                             </div>
-                            <div class="ibox-body">
-                                <form class="form-inline">
+                              <!-- <div>
+                                <form>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Twitch Username</label>
-                                        <div class="col-sm-10">
+                                        <div class="col-sm-4">
                                             <input class="form-control" type="text" name = username_in placeholder="Username">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Preferred Genres</label>
-                                        <div class="col-sm-10">
+                                        <div class="col-sm-4">
                                             <input class="form-control" type="text" name = genres_in placeholder="Action, Shooter, FPS">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Streamed Games</label>
-                                        <div class="col-sm-10">
+                                        <div class="col-sm-4">
                                             <input class="form-control" type="text" name = games_in placeholder="Game1, Game2, Game3">
                                         </div>
                                     </div>
-                                    
                                     <div class="form-group row">
                                         <div class="col-sm-10 ml-sm-auto">
                                             <button class="btn btn-info" type="submit">Submit</button>
                                         </div>
                                     </div>
                                 </form>
+                              </div> -->
+                          </div>
+                      </div>
+                  </div>
+                  <!--TABLEAU GRAPH BOX END-->
+
+
+
+                        <!--HALF GRAPH START-->
+                          <div class="col-lg-12">
+                              <div class="ibox">
+                                  <div class="ibox-head">
+                                      <div class="ibox-title">Games Recommended</div>
+                                      <div class="ibox-tools">
+                                          <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
+                                      </div>
+                                  </div>
+                                  <div class="ibox-body">
+                                      <!-- <div class="row align-items-center"> -->
+                                            <ol class="footer-nav">
+                                            {% for game,url in game_rec %}
+                                            <li><img class="smol" src="{{url}}"></li>
+                                            <!-- <li> {{game}} </li> -->
+                                            {% endfor %}
+                                            </ol>
+                                      <!-- </div> -->
+                                  </div>
+                              </div>
+                          </div>
+                          <!--END HALF GRAPH-->
+                          <!--HALF GRAPH START-->
+                            <div class="col-lg-12">
+                                <div class="ibox">
+                                    <div class="ibox-head">
+                                        <div class="ibox-title">Genres Recommended</div>
+                                        <div class="ibox-tools">
+                                            <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="ibox-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-6">
+                                              <ol>
+                                              {% for genre in recommendation['genre_recommendations'] %}
+                                              <li> {{genre}} </li>
+                                              {% endfor %}
+                                              </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    
-                
-                <div class="ibox">
-                    <div class="ibox-head">
-
-                        <div class="ibox-title">Predictions</div>
-                    </div>
-
-                    <div class="ibox-body">
-                        <form class="form-inline">
-                            <div class = "ibox-body">
-
-                                <div class="ibox-title">Games</div>      
-                                <ol>
-                                {% for game in recommendation['game_recommendations'] %}
-                                <li> {{game}} </li>
-                                {% endfor %}
-                                </ol>
-
-                                <div class="ibox-title">Genres</div>      
-                                <ol>
-                                {% for genre in recommendation['genre_recommendations'] %}
-                                <li> {{genre}} </li>
-                                {% endfor %}
-                                </ol>
-
-                            </div>
-                        </form>
-                    </div>
-
+                            <!--END HALF GRAPH-->
                 </div>
-                <div class = "row">
-                    <div class = "ibox-body">
-                        <meta name="viewport" content="width=device-width, initial-scale=1">
-                        <div class="col-lg-5">
-                            <div class = "container">
-                                <div class = "mix OTHER"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Conan%20Unconquered.jpg">
-                                </div>
-                                <div class = "mix OTHER"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Conan%20Unconquered.jpg">
-                                </div>
-                                <div class = "mix OTHER"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Conan%20Unconquered.jpg">
-                                </div>
-                                <div class = "mix OTHER"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Conan%20Unconquered.jpg">
-                                </div>
-                            </div>
 
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class = "ibox">
-                </div>
-                <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6">
-                        <div class="ibox"></div>
-                    </div>
-                </div>
-                
+
+<!--BEGIN GENRE SELECTION ZONE-->
+<!-- FILTER BUTTON STYLES-->
+<!-- Genre Tags -->
+
+  <!--TEST-->
+
+<!--END TEST ZONE-->
+
+                <style>
+                    .visitors-table tbody tr td:last-child {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .visitors-table .progress {
+                        flex: 1;
+                    }
+                    .visitors-table .progress-parcent {
+                        text-align: right;
+                        margin-left: 10px;
+                    }
+                </style>
+
             </div>
             <!-- END PAGE CONTENT-->
             <footer class="page-footer">
-                <div class="font-13">2018 © <b>AdminCAST</b> - All rights reserved.</div>
-                <a class="px-4" href="http://themeforest.net/item/adminca-responsive-bootstrap-4-3-angular-4-admin-dashboard-template/20912589" target="_blank">BUY PREMIUM</a>
+                <div class="font-16">
+                  By <a href="https://www.linkedin.com/in/natashaborders/">Natasha Borders</a>,
+                  <a href="https://www.linkedin.com/in/jeremy-chow/">Jeremy Chow</a>, and
+                  <a href="https://www.linkedin.com/in/natashaborders/">Randy Macaraeg
+
+
+                </div>
                 <div class="to-top"><i class="fa fa-angle-double-up"></i></div>
             </footer>
         </div>
@@ -353,9 +238,14 @@
     <script src="static/vendors/metisMenu/dist/metisMenu.min.js" type="text/javascript"></script>
     <script src="static/vendors/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
     <!-- PAGE LEVEL PLUGINS-->
+    <script src="static/vendors/chart.js/dist/Chart.min.js" type="text/javascript"></script>
+    <script src="static/vendors/jvectormap/jquery-jvectormap-2.0.3.min.js" type="text/javascript"></script>
+    <script src="static/vendors/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+    <script src="static/vendors/jvectormap/jquery-jvectormap-us-aea-en.js" type="text/javascript"></script>
     <!-- CORE SCRIPTS-->
     <script src="static/js/app.min.js" type="text/javascript"></script>
     <!-- PAGE LEVEL SCRIPTS-->
+    <script src="static/js/scripts/dashboard_1_demo.js" type="text/javascript"></script>
 </body>
 
 </html>
