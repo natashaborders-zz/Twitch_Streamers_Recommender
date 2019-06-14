@@ -83,7 +83,12 @@
                                   <div class="form-group row">
                                       <label class="col-sm-2 col-form-label">Twitch Username</label>
                                       <div class="col-sm-4">
-                                          <input class="form-control" type="text" name = username_in placeholder="Username">
+                                          <input class="form-control" type="text" name=username_in placeholder="Username">
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <label>
+                                          {{user_input['streamer_name']}}
+                                        </label>
                                       </div>
                                   </div>
                                   <div class="form-group row">
@@ -91,11 +96,26 @@
                                       <div class="col-sm-4">
                                           <input class="form-control" type="text" name = genres_in placeholder="Action, Shooter, FPS">
                                       </div>
+                                      <div class="col-sm-4">
+                                      <label>
+                                        {% for genres in user_input['streamer_genres'] %}
+                                        {{genres}},
+                                        {% endfor %}
+                                      </label>
+                                    </div>
+
                                   </div>
                                   <div class="form-group row">
                                       <label class="col-sm-2 col-form-label">Streamed Games</label>
                                       <div class="col-sm-4">
                                           <input class="form-control" type="text" name = games_in placeholder="Game1, Game2, Game3">
+                                      </div>
+                                      <div class="col-sm-4">
+                                          <label>
+                                            {% for games in user_input['streamer_games'] %}
+                                            {{games}},
+                                            {% endfor %}
+                                          </label>
                                       </div>
                                   </div>
 
@@ -106,33 +126,6 @@
                                   </div>
                               </form>
                             </div>
-                              <!-- <div>
-                                <form>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Twitch Username</label>
-                                        <div class="col-sm-4">
-                                            <input class="form-control" type="text" name = username_in placeholder="Username">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Preferred Genres</label>
-                                        <div class="col-sm-4">
-                                            <input class="form-control" type="text" name = genres_in placeholder="Action, Shooter, FPS">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Streamed Games</label>
-                                        <div class="col-sm-4">
-                                            <input class="form-control" type="text" name = games_in placeholder="Game1, Game2, Game3">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-sm-10 ml-sm-auto">
-                                            <button class="btn btn-info" type="submit">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
-                              </div> -->
                           </div>
                       </div>
                   </div>
@@ -153,7 +146,7 @@
                                       <!-- <div class="row align-items-center"> -->
                                             <ol class="footer-nav">
                                             {% for game,url in game_rec %}
-                                            <li><img class="smol" src="{{url}}"></li>
+                                            <li align="left"><img class="smol" src="{{url}}"><br>{{game}}</li>
                                             <!-- <li> {{game}} </li> -->
                                             {% endfor %}
                                             </ol>
