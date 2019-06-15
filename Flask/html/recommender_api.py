@@ -93,18 +93,18 @@ def make_prediction(streamer_name,streamer_genres,streamer_games):
 
     streamer_genres = parse_user_list(streamer_genres, list(genres['game_genres'].unique()))
     streamer_games = parse_user_list(streamer_games, list(games['game_name'].unique()))
-    
+
     print("FUZZY MATCHED STREAMER GAMES: ", streamer_games)
     print("FUZZY MATCHED STREAMER GENRES: ", streamer_genres)
-    
+
     # Look at genres of games that the streamer is currently playing using our database
     recorder_genre_list = display_current_genres(streamer_name, genres)
     # Combine above with the genres the streamer has entered into our website
-    full_genres = set(recorder_genre_list + streamer_genres)
+    full_genres = list(set(recorder_genre_list + streamer_genres))
 
     # Repeat above for games
     recorder_game_list = display_current_games(streamer_name, games)
-    full_games = set(recorder_game_list + streamer_games)
+    full_games = list(set(recorder_game_list + streamer_games))
 
     genre_iids = genres['game_genres'].unique()
     genre_iids_to_predict = np.setdiff1d(genre_iids, full_genres)
@@ -117,7 +117,7 @@ def make_prediction(streamer_name,streamer_genres,streamer_games):
     genre_top_n = get_top_n(genre_personal_predictions)
     for uid, genre_user_ratings in genre_top_n.items():
         genre_user_based_list = [iid for (iid, _) in genre_user_ratings]
-        
+
         #print("The recommended genres you're currently not streaming are:"+ str([iid for (iid, _) in user_ratings]))
 
     game_iids = games['game_name'].unique()
@@ -216,7 +216,7 @@ def make_prediction(streamer_name,streamer_genres,streamer_games):
 
 # For troubleshooting, pass some default parameters
 if __name__ == '__main__':
-    
+
     streamer_name = 'Ninja'
     streamer_genres = 'Action'
     streamer_games = 'Fortnite'
@@ -226,8 +226,7 @@ if __name__ == '__main__':
     print('Input Values: ',input_values['streamer_name'],
                             input_values['streamer_genres'],
                              input_values['streamer_games']  )
-    
+
     print('Genres: ', recommendations['genre_recommendations'])
     print('Games: ', recommendations['game_recommendations'])
     print(pic_urls)
-
