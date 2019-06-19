@@ -357,7 +357,7 @@ color: #91e6c7;
 /*Games Container*/
 .container {
     padding: 1rem;
-    text-align: justify;
+    text-align: left;
     font-size: 15px;
 }
 

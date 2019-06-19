@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Admincast bootstrap 4 &amp; angular 5 admin template, Шаблон админки | Dashboard</title>
+    <title>Twitch Recommender</title>
     <!-- GLOBAL MAINLY STYLES-->
     <link href="static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -21,32 +21,39 @@
     <div class="page-wrapper">
         <!-- START HEADER-->
         <header class="header">
-            <div class="page-brand">
+            <!-- <div class="page-brand">
                 <a class="link" href="index.html">
-                    <span class="brand">Game
-                        <span class="brand-tip">CAST</span>
+                    <span class="brand">Twitch
+                        <span class="brand-tip">Rec</span>
                     </span>
-                    <span class="brand-mini">GC</span>
+                    <span class="brand-mini">TR</span>
                 </a>
-            </div>
+            </div> -->
             <div class="flexbox flex-1">
-                <!-- START TOP-LEFT TOOLBAR-->
-                <!-- END TOP-LEFT TOOLBAR-->
-                <!-- START TOP-RIGHT TOOLBAR-->
+              <div class="ibox-title font-strong font-20">&nbsp;&nbsp;&nbsp;&nbsp;Twitch Recommender for Streamers |
 
-                <!-- END TOP-RIGHT TOOLBAR-->
+                            <a class="active" href="index.html">
+                              &nbsp;&nbsp;
+                              <i class="sidebar-item-icon fa fa-bar-chart"></i>
+                                <span class="nav-label">Stats</span>
+                            </a>
+
+                            <a href="form_basic.html">
+                              &nbsp;&nbsp;&nbsp;&nbsp;
+                              <i class="sidebar-item-icon fa fa-edit"></i>
+                                <span class="nav-label">Recommender</span></a>
+
+                  </div>
             </div>
         </header>
         <!-- END HEADER-->
         <!-- START SIDEBAR-->
-        <nav class="page-sidebar" id="sidebar">
+        <!-- <nav class="page-sidebar" id="sidebar">
             <div id="sidebar-collapse">
                 <div class="admin-block d-flex">
-                    <div>
-                        <img src="./assets/img/admin-avatar.png" width="45px" />
-                    </div>
+
                     <div class="admin-info">
-                        <div class="font-strong">USERNAME</div><small>BigTimeStrimmer</small></div>
+                        <div class="font-strong"></div><small></small></div>
                 </div>
                 <ul class="side-menu metismenu">
                     <li>
@@ -54,20 +61,19 @@
                             <span class="nav-label">Stats</span>
                         </a>
                     </li>
-                    <li class="heading">FEATURES</li>
                     <li>
                         <a href="form_basic.html"><i class="sidebar-item-icon fa fa-edit"></i>
-                            <span class="nav-label">Forms</span></a>
+                            <span class="nav-label">Recommender</span></a>
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
         <!-- END SIDEBAR-->
         <div class="content-wrapper">
             <!-- START PAGE CONTENT-->
             <!--START TOP BOX METRICS-->
             <div class="page-content fade-in-up">
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-lg-2 col-md-6">
                       <div class="ibox bg-success color-white widget-stat">
                           <div class="ibox-body">
@@ -121,21 +127,21 @@
                           </div>
                       </div>
                   </div>
-                </div>
+                </div> -->
                 <!--END TOP BOX PAGE METRICS-->
                 <div class="row">
                   <!--TABLEAU GRAPH BOX START-->
                   <div class="col-lg-12">
                     <div class="ibox">
                       <div class="ibox-head">
-                          <div class="ibox-title">Tableau Graph</div>
+                          <div class="ibox-title">Twitch Stats at a Glance</div>
                           <div class="ibox-tools">
                               <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
                           </div>
                       </div>
                           <div class="ibox-body">
                               <div>
-                                  <div class='tableauPlaceholder' id='viz1560788038330' style='position: relative'><noscript><a href='https:&#47;&#47;towardsdatascience.com&#47;streaming-recommender-twitch-e40d4a45e4ee'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tw&#47;TwitchVisualizations&#47;PickYourGame&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TwitchVisualizations&#47;PickYourGame' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tw&#47;TwitchVisualizations&#47;PickYourGame&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1560788038330');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.50)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                  <div class='tableauPlaceholder' id='viz1560901988470' style='position: relative'><noscript><a href='https:&#47;&#47;towardsdatascience.com&#47;streaming-recommender-twitch-e40d4a45e4ee'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tw&#47;TwitchVisualizations&#47;PickYourGame&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TwitchVisualizations&#47;PickYourGame' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tw&#47;TwitchVisualizations&#47;PickYourGame&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1560901988470');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.50)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                               </div>
                           </div>
                       </div>
@@ -868,7 +874,7 @@
             <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Cricket%20Club.jpg" alt="Cricket Club">Cricket Club</div>
             <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20for%20Nintendo%20Switch%20%28Working%20Title%29.jpg" alt="Pokémon for Nintendo Switch (Working Title)">Pokémon for Nintendo Switch (Working Title)</div>
             <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Detention.jpg" alt="Detention">Detention</div>
-            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Prominence%20Poker.jpg" alt="Prominence Poker">Prominence Poker</div>
+            <div class="mix CardBoardGame GamblingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Prominence%20Poker.jpg" alt="Prominence Poker">Prominence Poker</div>
             <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Desert%20Skies.jpg" alt="Desert Skies">Desert Skies</div>
             <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Shattered:%20Tale%20of%20the%20Forgotten%20King.jpg" alt="Shattered: Tale of the Forgotten King">Shattered: Tale of the Forgotten King</div>
             <div class="mix Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20Black/White%20Version%202.jpg" alt="Pokémon Black/White Version 2">Pokémon Black/White Version 2</div>
@@ -933,7 +939,8 @@
                 <div class="font-16">
                   By <a href="https://www.linkedin.com/in/natashaborders/">Natasha Borders</a>,
                   <a href="https://www.linkedin.com/in/jeremy-chow/">Jeremy Chow</a>, and
-                  <a href="https://www.linkedin.com/in/natashaborders/">Randy Macaraeg</a>
+                  <a href="https://www.linkedin.com/in/natashaborders/">Randy Macaraeg</a>.
+                   Our code can be found on <a href="https://github.com/natashaborders/Twitch_Streamers_Recommender">GitHub</a>.
 
 
                 </div>
