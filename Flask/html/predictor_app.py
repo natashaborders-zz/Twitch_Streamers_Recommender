@@ -3,6 +3,7 @@ from flask import request
 from recommender_api import make_prediction
 from flask import jsonify
 import pickle
+import random
 
 # Initialize the app
 

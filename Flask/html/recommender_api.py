@@ -1,4 +1,3 @@
-
 '''
 Recommender API
 '''
@@ -107,7 +106,7 @@ def make_prediction(streamer_name,streamer_genres,streamer_games):
     full_games = list(set(recorder_game_list + streamer_games))
 
     genre_iids = genres['game_genres'].unique()
-    genre_iids_to_predict = np.setdiff1d(genre_iids, full_genres)
+    genre_iids_to_predict = np.setdiff1d(genre_iids, full_genres, assume_unique=True)
 
     # We are filling 'real' user rating of item to 4, but this does NOT have any effect on prediction
 
@@ -121,7 +120,7 @@ def make_prediction(streamer_name,streamer_genres,streamer_games):
         #print("The recommended genres you're currently not streaming are:"+ str([iid for (iid, _) in user_ratings]))
 
     game_iids = games['game_name'].unique()
-    game_iids_to_predict = np.setdiff1d(game_iids, full_games)
+    game_iids_to_predict = np.setdiff1d(game_iids, full_games, assume_unique=True)
     game_testset_personal = [[streamer_name, iid, 4.] for iid in game_iids_to_predict]
     game_personal_predictions = algo_game_user.test(game_testset_personal)
     game_top_n = get_top_n(game_personal_predictions)

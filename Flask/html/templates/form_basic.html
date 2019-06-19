@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Admincast bootstrap 4 &amp; angular 5 admin template, Шаблон админки | Dashboard</title>
+    <title>Twitch Recommender</title>
     <!-- GLOBAL MAINLY STYLES-->
     <link href="static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -21,32 +21,39 @@
     <div class="page-wrapper">
         <!-- START HEADER-->
         <header class="header">
-            <div class="page-brand">
+            <!-- <div class="page-brand">
                 <a class="link" href="index.html">
-                    <span class="brand">Game
-                        <span class="brand-tip">CAST</span>
+                    <span class="brand">Twitch
+                        <span class="brand-tip">Rec</span>
                     </span>
-                    <span class="brand-mini">GC</span>
+                    <span class="brand-mini">TR</span>
                 </a>
-            </div>
+            </div> -->
             <div class="flexbox flex-1">
-                <!-- START TOP-LEFT TOOLBAR-->
-                <!-- END TOP-LEFT TOOLBAR-->
-                <!-- START TOP-RIGHT TOOLBAR-->
+              <div class="ibox-title font-strong font-20">&nbsp;&nbsp;&nbsp;&nbsp;Twitch Recommender for Streamers |
 
-                <!-- END TOP-RIGHT TOOLBAR-->
+                            <a class="active" href="index.html">
+                              &nbsp;&nbsp;
+                              <i class="sidebar-item-icon fa fa-bar-chart"></i>
+                                <span class="nav-label">Stats</span>
+                            </a>
+
+                            <a href="form_basic.html">
+                              &nbsp;&nbsp;&nbsp;&nbsp;
+                              <i class="sidebar-item-icon fa fa-edit"></i>
+                                <span class="nav-label">Recommender</span></a>
+
+                  </div>
             </div>
         </header>
         <!-- END HEADER-->
         <!-- START SIDEBAR-->
-        <nav class="page-sidebar" id="sidebar">
+        <!-- <nav class="page-sidebar" id="sidebar">
             <div id="sidebar-collapse">
                 <div class="admin-block d-flex">
-                    <div>
-                        <img src="./assets/img/admin-avatar.png" width="45px" />
-                    </div>
+
                     <div class="admin-info">
-                        <div class="font-strong">USERNAME</div><small>BigTimeStrimmer</small></div>
+                        <div class="font-strong"></div><small></small></div>
                 </div>
                 <ul class="side-menu metismenu">
                     <li>
@@ -54,14 +61,13 @@
                             <span class="nav-label">Stats</span>
                         </a>
                     </li>
-                    <li class="heading">FEATURES</li>
                     <li>
                         <a href="form_basic.html"><i class="sidebar-item-icon fa fa-edit"></i>
-                            <span class="nav-label">Forms</span></a>
+                            <span class="nav-label">Recommender</span></a>
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
         <!-- END SIDEBAR-->
         <div class="content-wrapper">
             <!-- START PAGE CONTENT-->
@@ -90,6 +96,11 @@
                                           {{user_input['streamer_name']}}
                                         </label>
                                       </div>
+                                      <div class="col-sm-4">
+                                        <label>
+                                          {{user_input['streamer_name']}}
+                                        </label>
+                                      </div>
                                   </div>
                                   <div class="form-group row">
                                       <label class="col-sm-2 col-form-label">Preferred Genres</label>
@@ -103,7 +114,6 @@
                                         {% endfor %}
                                       </label>
                                     </div>
-
                                   </div>
                                   <div class="form-group row">
                                       <label class="col-sm-2 col-form-label">Streamed Games</label>
@@ -137,7 +147,7 @@
                           <div class="col-lg-12">
                               <div class="ibox">
                                   <div class="ibox-head">
-                                      <div class="ibox-title">Games Recommended</div>
+                                      <div class="ibox-title">Recommended Games</div>
                                       <div class="ibox-tools">
                                           <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
                                       </div>
@@ -159,7 +169,7 @@
                             <div class="col-lg-12">
                                 <div class="ibox">
                                     <div class="ibox-head">
-                                        <div class="ibox-title">Genres Recommended</div>
+                                        <div class="ibox-title">Recommended Genres</div>
                                         <div class="ibox-tools">
                                             <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
                                         </div>
@@ -179,15 +189,6 @@
                             </div>
                             <!--END HALF GRAPH-->
                 </div>
-
-
-<!--BEGIN GENRE SELECTION ZONE-->
-<!-- FILTER BUTTON STYLES-->
-<!-- Genre Tags -->
-
-  <!--TEST-->
-
-<!--END TEST ZONE-->
 
                 <style>
                     .visitors-table tbody tr td:last-child {
@@ -209,7 +210,8 @@
                 <div class="font-16">
                   By <a href="https://www.linkedin.com/in/natashaborders/">Natasha Borders</a>,
                   <a href="https://www.linkedin.com/in/jeremy-chow/">Jeremy Chow</a>, and
-                  <a href="https://www.linkedin.com/in/natashaborders/">Randy Macaraeg
+                  <a href="https://www.linkedin.com/in/natashaborders/">Randy Macaraeg</a>.
+                   Our code can be found on <a href="https://github.com/natashaborders/Twitch_Streamers_Recommender">GitHub</a>.
 
 
                 </div>
