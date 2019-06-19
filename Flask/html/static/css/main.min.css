@@ -4710,7 +4710,7 @@ body.fixed-layout.sidebar-mini .content-wrapper {
     background-color: #f7f7f7;
     background-color: #f2f2f2;
     background-color: #6441a5;
-    margin-left: 220px;
+    margin-left: 0px;
     padding: 0 15px 60px 15px;
     -webkit-transition: margin .2s ease-in-out;
     -o-transition: margin .2s ease-in-out;
@@ -4793,13 +4793,13 @@ body.fixed-layout .page-sidebar {
 }
 
 body.boxed-layout {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto
 }
 
 body.boxed-layout.fixed-layout .header,
 body.boxed-layout.fixed-navbar .header {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto
 }
 
