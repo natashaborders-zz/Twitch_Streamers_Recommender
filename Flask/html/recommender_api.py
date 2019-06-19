@@ -216,15 +216,9 @@ def make_prediction(streamer_name,streamer_genres,streamer_games):
 # For troubleshooting, pass some default parameters
 if __name__ == '__main__':
 
-<<<<<<< HEAD
     streamer_name = 'Ninja'
     streamer_genres = 'Action'
     streamer_games = 'Fortnite'
-=======
-    streamer_name = ''
-    streamer_genres = ''
-    streamer_games = ''
->>>>>>> url_pictures_links
 
 
     input_values, recommendations, pic_urls = make_prediction(streamer_name,streamer_genres,streamer_games)
