@@ -12,13 +12,14 @@ app = flask.Flask(__name__)
 def form():
     input_values = 0
     recommendations = 0
+    pic_url=0
     # First time loading page, nothing is passed. After fields are entered, pass 
     # those arguments into model
     if request.args:
         username_in = str(request.args['username_in'])
         genres_in = str(request.args['genres_in'])
         games_in = str(request.args['games_in'])
-        input_values, recommendations = make_prediction(username_in, genres_in, games_in)
+        input_values, recommendations, _= make_prediction(username_in, genres_in, games_in)
 
     return flask.render_template('form_basic.html',
                                      user_input=input_values,

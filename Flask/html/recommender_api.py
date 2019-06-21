@@ -74,6 +74,15 @@ def parse_user_list(user_input_list,unique_items_list):
             fuzzy_parsed.append(find_fuzzy_matches(token,unique_items_list)[0][0])
     return fuzzy_parsed
 
+def get_game_pic_urls(game_list):
+    pic_url_list=list()
+    with open( "static/models/pic_url_dict.pkl", "rb" ) as f:
+        games = pickle.load(f)
+    for item in game_list:
+        pic_url_list.append(games[item])
+
+    return pic_url_list
+
 def make_prediction(streamer_name,streamer_genres,streamer_games):
     '''
     Given the name of a streamer, list of genres they enter, and a list of games they say
@@ -200,23 +209,25 @@ def make_prediction(streamer_name,streamer_genres,streamer_games):
     input_values = input_dict
     return_dict['genre_recommendations'] = genre_recommendations
     return_dict['game_recommendations'] = game_recommendations
-    return input_values,return_dict
 
+    game_pic_urls = get_game_pic_urls(game_recommendations)
+    game_pic_urls = [x.replace('-{width}x{height}','') for x in game_pic_urls]
+    return input_values,return_dict, game_pic_urls[:5]
+
+# For troubleshooting, pass some default parameters
 if __name__ == '__main__':
-    # genres, algo_genre_user, games, algo_game_user = load_models()
     
     streamer_name = 'Ninja'
-    streamer_genres = ['Action']
-    streamer_games = ['Fortnite']
+    streamer_genres = 'Action'
+    streamer_games = 'Fortnite'
 
 
-    input_values, recommendations = make_prediction(streamer_name,streamer_genres,streamer_games)
+    input_values, recommendations, pic_urls = make_prediction(streamer_name,streamer_genres,streamer_games)
     print('Input Values: ',input_values['streamer_name'],
                             input_values['streamer_genres'],
                              input_values['streamer_games']  )
-    # print(f'Input values: {input_values['streamer_name']}')
     
     print('Genres: ', recommendations['genre_recommendations'])
     print('Games: ', recommendations['game_recommendations'])
-    # pprint(probs)
+    print(pic_urls)
 
