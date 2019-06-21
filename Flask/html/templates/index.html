@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <title>Admincast bootstrap 4 &amp; angular 5 admin template, Шаблон админки | Dashboard</title>
+    <title>Twitch Recommender for Streamers</title>
     <!-- GLOBAL MAINLY STYLES-->
     <link href="static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
@@ -21,32 +21,39 @@
     <div class="page-wrapper">
         <!-- START HEADER-->
         <header class="header">
-            <div class="page-brand">
+            <!-- <div class="page-brand">
                 <a class="link" href="index.html">
-                    <span class="brand">Game
-                        <span class="brand-tip">CAST</span>
+                    <span class="brand">Twitch
+                        <span class="brand-tip">Rec</span>
                     </span>
-                    <span class="brand-mini">GC</span>
+                    <span class="brand-mini">TR</span>
                 </a>
-            </div>
+            </div> -->
             <div class="flexbox flex-1">
-                <!-- START TOP-LEFT TOOLBAR-->
-                <!-- END TOP-LEFT TOOLBAR-->
-                <!-- START TOP-RIGHT TOOLBAR-->
+              <div class="ibox-title font-strong font-20">&nbsp;&nbsp;&nbsp;&nbsp;Twitch Recommender for Streamers |
 
-                <!-- END TOP-RIGHT TOOLBAR-->
+                            <a class="active" href="index.html">
+                              &nbsp;&nbsp;
+                              <i class="sidebar-item-icon fa fa-bar-chart"></i>
+                                <span class="nav-label">Stats</span>
+                            </a>
+
+                            <a href="form_basic.html">
+                              &nbsp;&nbsp;&nbsp;&nbsp;
+                              <i class="sidebar-item-icon fa fa-edit"></i>
+                                <span class="nav-label">Recommender</span></a>
+
+                  </div>
             </div>
         </header>
         <!-- END HEADER-->
         <!-- START SIDEBAR-->
-        <nav class="page-sidebar" id="sidebar">
+        <!-- <nav class="page-sidebar" id="sidebar">
             <div id="sidebar-collapse">
                 <div class="admin-block d-flex">
-                    <div>
-                        <img src="./assets/img/admin-avatar.png" width="45px" />
-                    </div>
+
                     <div class="admin-info">
-                        <div class="font-strong">USERNAME</div><small>BigTimeStrimmer</small></div>
+                        <div class="font-strong"></div><small></small></div>
                 </div>
                 <ul class="side-menu metismenu">
                     <li>
@@ -54,20 +61,19 @@
                             <span class="nav-label">Stats</span>
                         </a>
                     </li>
-                    <li class="heading">FEATURES</li>
                     <li>
                         <a href="form_basic.html"><i class="sidebar-item-icon fa fa-edit"></i>
-                            <span class="nav-label">Forms</span></a>
+                            <span class="nav-label">Recommender</span></a>
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
         <!-- END SIDEBAR-->
         <div class="content-wrapper">
             <!-- START PAGE CONTENT-->
             <!--START TOP BOX METRICS-->
             <div class="page-content fade-in-up">
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-lg-2 col-md-6">
                       <div class="ibox bg-success color-white widget-stat">
                           <div class="ibox-body">
@@ -121,31 +127,31 @@
                           </div>
                       </div>
                   </div>
-                </div>
+                </div> -->
                 <!--END TOP BOX PAGE METRICS-->
                 <div class="row">
                   <!--TABLEAU GRAPH BOX START-->
                   <div class="col-lg-12">
                     <div class="ibox">
                       <div class="ibox-head">
-                          <div class="ibox-title">Tableau Graph</div>
+                          <div class="ibox-title">Twitch Stats at a Glance</div>
                           <div class="ibox-tools">
                               <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
                           </div>
                       </div>
                           <div class="ibox-body">
                               <div>
-                                  <div class='tableauPlaceholder' id='viz1559865581225' style='position: relative'><noscript><a href='https:&#47;&#47;public.tableau.com&#47;profile&#47;randy3211#!&#47;vizhome&#47;SullyGnome&#47;Sheet1'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;SullyGnome&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SullyGnome&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Su&#47;SullyGnome&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1559865581225');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height='500px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                  <div class='tableauPlaceholder' id='viz1560901988470' style='position: relative'><noscript><a href='https:&#47;&#47;towardsdatascience.com&#47;streaming-recommender-twitch-e40d4a45e4ee'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tw&#47;TwitchVisualizations&#47;PickYourGame&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TwitchVisualizations&#47;PickYourGame' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Tw&#47;TwitchVisualizations&#47;PickYourGame&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1560901988470');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.50)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                               </div>
                           </div>
                       </div>
                   </div>
                   <!--TABLEAU GRAPH BOX END-->
                   <!--TABLEAU GRAPH BOX START-->
-                  <div class="col-lg-12">
+                  <!-- <div class="col-lg-12">
                     <div class="ibox">
                       <div class="ibox-head">
-                          <div class="ibox-title">Tableau Graph</div>
+                          <div class="ibox-title">Details</div>
                           <div class="ibox-tools">
                               <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
                           </div>
@@ -156,10 +162,10 @@
                               </div>
                           </div>
                       </div>
-                  </div>
+                  </div> -->
                   <!--TABLEAU GRAPH BOX END-->
                   <!--DONUT GRAPH START-->
-                    <div class="col-lg-4">
+                    <!-- <div class="col-lg-4">
                         <div class="ibox">
                             <div class="ibox-head">
                                 <div class="ibox-title">Donut graph</div>
@@ -178,23 +184,12 @@
                                         <div class="m-b-20 text-warning"><i class="fa fa-circle-o m-r-10"></i>Mobile 21%</div>
                                     </div>
                                 </div>
-                                <ul class="list-group list-group-divider list-group-full">
-                                    <li class="list-group-item">Chrome
-                                        <span class="float-right text-success"><i class="fa fa-caret-up"></i> 24%</span>
-                                    </li>
-                                    <li class="list-group-item">Firefox
-                                        <span class="float-right text-success"><i class="fa fa-caret-up"></i> 12%</span>
-                                    </li>
-                                    <li class="list-group-item">Opera
-                                        <span class="float-right text-danger"><i class="fa fa-caret-down"></i> 4%</span>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!--END DONUT GRAPH-->
                     <!--DONUT GRAPH START-->
-                      <div class="col-lg-4">
+                      <!-- <div class="col-lg-4">
                           <div class="ibox">
                               <div class="ibox-head">
                                   <div class="ibox-title">Donut graph</div>
@@ -226,10 +221,10 @@
                                   </ul>
                               </div>
                           </div>
-                      </div>
+                      </div> -->
                       <!--END DONUT GRAPH-->
                       <!--DONUT GRAPH START-->
-                        <div class="col-lg-4">
+                        <!-- <div class="col-lg-4">
                             <div class="ibox">
                                 <div class="ibox-head">
                                     <div class="ibox-title">Donut graph</div>
@@ -261,10 +256,10 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!--END DONUT GRAPH-->
                         <!--HALF GRAPH START-->
-                          <div class="col-lg-6">
+                          <!-- <div class="col-lg-6">
                               <div class="ibox">
                                   <div class="ibox-head">
                                       <div class="ibox-title">Half-Page Graph</div>
@@ -280,10 +275,10 @@
                                       </div>
                                   </div>
                               </div>
-                          </div>
+                          </div> -->
                           <!--END HALF GRAPH-->
                           <!--HALF GRAPH START-->
-                            <div class="col-lg-6">
+                            <!-- <div class="col-lg-6">
                                 <div class="ibox">
                                     <div class="ibox-head">
                                         <div class="ibox-title">Half-Page Graph</div>
@@ -299,7 +294,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!--END HALF GRAPH-->
                 </div>
 
@@ -315,7 +310,7 @@
     <div class="col-lg-12">
       <div class="ibox">
         <div class="ibox-head">
-          <div class="ibox-title">Genre Selection (Pick the Genres you want, starts w/all games)</div>
+          <div class="ibox-title">Genre Selection</div>
           <div class="ibox-tools">
             <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
           </div>
@@ -346,8 +341,8 @@
           <button type="button" class="control" data-toggle=".MMORPG">MMORPG</button>
           <button type="button" class="control" data-toggle=".MOBA">MOBA</button>
           <button type="button" class="control" data-toggle=".Metroidvania">Metroidvania</button>
-          <button type="button" class="control" data-toggle=".NONE">NONE</button>
           <button type="button" class="control" data-toggle=".OpenWorld">Open World</button>
+          <button type="button" class="control" data-toggle=".Other">Other/Retro</button>
           <button type="button" class="control" data-toggle=".Pinball">Pinball</button>
           <button type="button" class="control" data-toggle=".Platformer">Platformer</button>
           <button type="button" class="control" data-toggle=".PointandClick">Point and Click</button>
@@ -365,69 +360,542 @@
           <button type="button" class="control" data-toggle=".Strategy">Strategy</button>
           <button type="button" class="control" data-toggle=".Survival">Survival</button>
           <button type="button" class="control" data-toggle=".VisualNovel">Visual Novel</button>
+          <button type="button" class="control" data-filter="none">Clear All</button>
         </div>
 
         <div class="container">
-            <div class="mix green blue">GAME 1</div>
-            <!-- <div id="hideme">WAHHHHHHHH</div>
-            <script type="text/javascript">
-                $("#hideme").hide();
-            </script> -->
-            <div class="mix FPS">GAME2</div>
-            <div class="mix PointandClick">POINT AND CLICK</div>
-            <div class="mix PointandClick Strategy">POINT and click/Strategy</div>
-            <div class="mix green pink"></div>
-            <div class="mix Horror">HORROR</div>
-            <div class="mix Card&BoardGame">Card & Board Game</div>
-            <div class="mix blue pink"></div>
-            <div class="mix green blue">GAME 1</div>
-            <div class="mix green"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix green pink"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix blue pink"></div>
-            <div class="mix green blue">GAME 1</div>
-            <div class="mix green"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix green pink"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix blue pink"></div>
-            <div class="mix green blue">GAME 1</div>
-            <div class="mix green"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix green pink"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix blue pink"></div>
-            <div class="mix green blue">GAME 1</div>
-            <div class="mix green"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix green pink"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix blue pink"></div>
-            <div class="mix green blue">GAME 1</div>
-            <div class="mix green"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix green pink"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix blue pink"></div>
-            <div class="mix green blue">GAME 3</div>
-            <div class="mix green"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix green pink"></div>
-            <div class="mix blue"></div>
-            <div class="mix pink"></div>
-            <div class="mix blue pink"></div>
+            <div class="mix Action Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Tanks.jpg" alt="World of Tanks">World of Tanks</div>
+            <div class="mix OpenWorld Stealth MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Elder%20Scrolls%20Online.jpg" alt="The Elder Scrolls Online">The Elder Scrolls Online</div>
+            <div class="mix CardBoardGame GamblingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Poker.jpg" alt="Poker">Poker</div>
+            <div class="mix MOBA"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Heroes%20of%20the%20Storm.jpg" alt="Heroes of the Storm">Heroes of the Storm</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/BanG%20Dream%21%20Girls%20Band%20Party%21.jpg" alt="BanG Dream! Girls Band Party!">BanG Dream! Girls Band Party!</div>
+            <div class="mix SportsGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/NBA%202K19.jpg" alt="NBA 2K19">NBA 2K19</div>
+            <div class="mix DrivingRacingGame SportsGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Rocket%20League.jpg" alt="Rocket League">Rocket League</div>
+            <div class="mix Strategy RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Heroes%20of%20Might%20and%20Magic%20III:%20The%20Shadow%20of%20Death.jpg" alt="Heroes of Might and Magic III: The Shadow of Death">Heroes of Might and Magic III: The Shadow of Death</div>
+            <div class="mix IndieGame Platformer Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Cuphead.jpg" alt="Cuphead">Cuphead</div>
+            <div class="mix OpenWorld Shooter RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Tom%20Clancy%27s%20The%20Division%202.jpg" alt="Tom Clancy's The Division 2">Tom Clancy's The Division 2</div>
+            <div class="mix Platformer AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Super%20Mario%2064.jpg" alt="Super Mario 64">Super Mario 64</div>
+            <div class="mix SeriesSouls Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dark%20Souls%20III.jpg" alt="Dark Souls III">Dark Souls III</div>
+            <div class="mix RPG Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Monster%20Hunter%20World.jpg" alt="Monster Hunter World">Monster Hunter World</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Battalion%201944.jpg" alt="Battalion 1944">Battalion 1944</div>
+            <div class="mix FPS Puzzle AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Draugen.jpg" alt="Draugen">Draugen</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Retro.jpg" alt="Retro">Retro</div>
+            <div class="mix Action RPG Simulation"><img class="smol" src="https://static-cdn.jtvnw.net/ttv-boxart/VRChat.jpg" alt="VRChat">VRChat</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Trover%20Saves%20the%20Universe.jpg" alt="Trover Saves the Universe">Trover Saves the Universe</div>
+            <div class="mix MMORPG RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Lineage%20II.jpg" alt="Lineage II">Lineage II</div>
+            <div class="mix RhythmMusicGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Twitch%20Sings.jpg" alt="Twitch Sings">Twitch Sings</div>
+            <div class="mix Action RPG Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Diablo%20III:%20Reaper%20of%20Souls.jpg" alt="Diablo III: Reaper of Souls">Diablo III: Reaper of Souls</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Marbles%20On%20Stream.jpg" alt="Marbles On Stream">Marbles On Stream</div>
+            <div class="mix Shooter Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Warframe.jpg" alt="Warframe">Warframe</div>
+            <div class="mix MOBA"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Smite.jpg" alt="Smite">Smite</div>
+            <div class="mix OpenWorld Action Platformer"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Terraria.jpg" alt="Terraria">Terraria</div>
+            <div class="mix RhythmMusicGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/osu%21.jpg" alt="osu!">osu!</div>
+            <div class="mix Action Puzzle Compilation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Games%20+%20Demos.jpg" alt="Games + Demos">Games + Demos</div>
+            <div class="mix IRL Creative"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Makers%20&%20Crafting.jpg" alt="Makers & Crafting">Makers & Crafting</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./A%20Plague%20Tale:%20Innocence.jpg" alt="A Plague Tale: Innocence">A Plague Tale: Innocence</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/ARK.jpg" alt="ARK">ARK</div>
+            <div class="mix IRL"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Travel%20&%20Outdoors.jpg" alt="Travel & Outdoors">Travel & Outdoors</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Deathgarden.jpg" alt="Deathgarden">Deathgarden</div>
+            <div class="mix CardBoardGame RTS Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Minion%20Masters.jpg" alt="Minion Masters">Minion Masters</div>
+            <div class="mix RPG AdventureGame MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Tibia.jpg" alt="Tibia">Tibia</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Legend%20of%20Zelda:%20Ocarina%20of%20Time.jpg" alt="The Legend of Zelda: Ocarina of Time">The Legend of Zelda: Ocarina of Time</div>
+            <div class="mix Platformer Fighting"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Super%20Smash%20Bros.%20Ultimate.jpg" alt="Super Smash Bros. Ultimate">Super Smash Bros. Ultimate</div>
+            <div class="mix Shooter FPS RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Borderlands%202.jpg" alt="Borderlands 2">Borderlands 2</div>
+            <div class="mix MMORPG AdventureGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/MapleStory.jpg" alt="MapleStory">MapleStory</div>
+            <div class="mix IndieGame Fighting"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Mordhau.jpg" alt="Mordhau">Mordhau</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Always%20On.jpg" alt="Always On">Always On</div>
+            <div class="mix RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Pokemon:%20Let%27s%20Go,%20Pikachu%21/Eevee%21.jpg" alt="Pokemon: Let's Go, Pikachu!/Eevee!">Pokemon: Let's Go, Pikachu!/Eevee!</div>
+            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Gwent:%20The%20Witcher%20Card%20Game.jpg" alt="Gwent: The Witcher Card Game">Gwent: The Witcher Card Game</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Legend%20of%20Zelda:%20Majora%27s%20Mask.jpg" alt="The Legend of Zelda: Majora's Mask">The Legend of Zelda: Majora's Mask</div>
+            <div class="mix RPG Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Battle%20Brothers.jpg" alt="Battle Brothers">Battle Brothers</div>
+            <div class="mix Creative IRL"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Science%20&%20Technology.jpg" alt="Science & Technology">Science & Technology</div>
+            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Elder%20Scrolls:%20Legends.jpg" alt="The Elder Scrolls: Legends">The Elder Scrolls: Legends</div>
+            <div class="mix Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Sims%204.jpg" alt="The Sims 4">The Sims 4</div>
+            <div class="mix Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/House%20Flipper.jpg" alt="House Flipper">House Flipper</div>
+            <div class="mix IndieGame Horror"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Layers%20of%20Fear%202.jpg" alt="Layers of Fear 2">Layers of Fear 2</div>
+            <div class="mix Shooter FPS Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Battlefield%20V.jpg" alt="Battlefield V">Battlefield V</div>
+            <div class="mix Fighting"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Tekken%207.jpg" alt="Tekken 7">Tekken 7</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Sea%20of%20Thieves.jpg" alt="Sea of Thieves">Sea of Thieves</div>
+            <div class="mix MOBA"><img src="https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends.jpg" alt="League of Legends">League of Legends</div>
+            <div class="mix Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Fortnite.jpg" alt="Fortnite">Fortnite</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Counter-Strike:%20Global%20Offensive.jpg" alt="Counter-Strike: Global Offensive">Counter-Strike: Global Offensive</div>
+            <div class="mix IRL"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting.jpg" alt="Just Chatting">Just Chatting</div>
+            <div class="mix OpenWorld DrivingRacingGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Grand%20Theft%20Auto%20V.jpg" alt="Grand Theft Auto V">Grand Theft Auto V</div>
+            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone.jpg" alt="Hearthstone">Hearthstone</div>
+            <div class="mix MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft.jpg" alt="World of Warcraft">World of Warcraft</div>
+            <div class="mix MOBA"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dota%202.jpg" alt="Dota 2">Dota 2</div>
+            <div class="mix AdventureGame OpenWorld Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Minecraft.jpg" alt="Minecraft">Minecraft</div>
+            <div class="mix FPS Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS.jpg" alt="PLAYERUNKNOWN'S BATTLEGROUNDS">PLAYERUNKNOWN'S BATTLEGROUNDS</div>
+            <div class="mix CardBoardGame Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Auto%20Chess.jpg" alt="Auto Chess">Auto Chess</div>
+            <div class="mix Strategy RTS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/StarCraft.jpg" alt="StarCraft">StarCraft</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Overwatch.jpg" alt="Overwatch">Overwatch</div>
+            <div class="mix IRL"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Talk%20Shows%20&%20Podcasts.jpg" alt="Talk Shows & Podcasts">Talk Shows & Podcasts</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Apex%20Legends.jpg" alt="Apex Legends">Apex Legends</div>
+            <div class="mix SportsGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/FIFA%2019.jpg" alt="FIFA 19">FIFA 19</div>
+            <div class="mix MMORPG RPG Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Path%20of%20Exile.jpg" alt="Path of Exile">Path of Exile</div>
+            <div class="mix Horror Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dead%20by%20Daylight.jpg" alt="Dead by Daylight">Dead by Daylight</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Tom%20Clancy%27s%20Rainbow%20Six:%20Siege.jpg" alt="Tom Clancy's Rainbow Six: Siege">Tom Clancy's Rainbow Six: Siege</div>
+            <div class="mix Strategy RTS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II.jpg" alt="StarCraft II">StarCraft II</div>
+            <div class="mix Roguelike RPG Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Diablo%20II:%20Lord%20of%20Destruction.jpg" alt="Diablo II: Lord of Destruction">Diablo II: Lord of Destruction</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Destiny%202.jpg" alt="Destiny 2">Destiny 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Marvel%20vs.%20Capcom%20Infinite.jpg" alt="Marvel vs. Capcom Infinite">Marvel vs. Capcom Infinite</div>
+            <div class="mix Creative IRL"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Music%20&%20Performing%20Arts.jpg" alt="Music & Performing Arts">Music & Performing Arts</div>
+            <div class="mix RPG OpenWorld MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Black%20Desert%20Online.jpg" alt="Black Desert Online">Black Desert Online</div>
+            <div class="mix RTS Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Warcraft%20III:%20The%20Frozen%20Throne.jpg" alt="Warcraft III: The Frozen Throne">Warcraft III: The Frozen Throne</div>
+            <div class="mix Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Total%20War:%20Three%20Kingdoms.jpg" alt="Total War: Three Kingdoms">Total War: Three Kingdoms</div>
+            <div class="mix GamblingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Slots.jpg" alt="Slots">Slots</div>
+            <div class="mix Shooter FPS Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Escape%20From%20Tarkov.jpg" alt="Escape From Tarkov">Escape From Tarkov</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Call%20of%20Duty:%20Black%20Ops%204.jpg" alt="Call of Duty: Black Ops 4">Call of Duty: Black Ops 4</div>
+            <div class="mix Creative"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Art.jpg" alt="Art">Art</div>
+            <div class="mix IRL"><img src="https://static-cdn.jtvnw.net/ttv-boxart/ASMR.jpg" alt="ASMR">ASMR</div>
+            <div class="mix Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Stellaris.jpg" alt="Stellaris">Stellaris</div>
+            <div class="mix RhythmMusicGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Just%20Dance%202019.jpg" alt="Just Dance 2019">Just Dance 2019</div>
+            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Magic:%20The%20Gathering.jpg" alt="Magic: The Gathering">Magic: The Gathering</div>
+            <div class="mix MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/FINAL%20FANTASY%20XIV%20Online.jpg" alt="FINAL FANTASY XIV Online">FINAL FANTASY XIV Online</div>
+            <div class="mix MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Old%20School%20RuneScape.jpg" alt="Old School RuneScape">Old School RuneScape</div>
+            <div class="mix Simulation Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warships.jpg" alt="World of Warships">World of Warships</div>
+            <div class="mix AdventureGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dauntless.jpg" alt="Dauntless">Dauntless</div>
+            <div class="mix Platformer"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Super%20Mario%20Maker.jpg" alt="Super Mario Maker">Super Mario Maker</div>
+            <div class="mix Fighting"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Street%20Fighter%20V.jpg" alt="Street Fighter V">Street Fighter V</div>
+            <div class="mix FPS Simulation RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/DayZ.jpg" alt="DayZ">DayZ</div>
+            <div class="mix RTS Simulation Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/RimWorld.jpg" alt="RimWorld">RimWorld</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Battlefield%201.jpg" alt="Battlefield 1">Battlefield 1</div>
+            <div class="mix RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Final%20Fantasy%20X.jpg" alt="Final Fantasy X">Final Fantasy X</div>
+            <div class="mix IRL Creative"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Food%20&%20Drink.jpg" alt="Food & Drink">Food & Drink</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Golf%20It%21.jpg" alt="Golf It!">Golf It!</div>
+            <div class="mix IndieGame Platformer Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Katana%20Zero.jpg" alt="Katana Zero">Katana Zero</div>
+            <div class="mix OpenWorld Stealth Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Grand%20Theft%20Auto:%20San%20Andreas.jpg" alt="Grand Theft Auto: San Andreas">Grand Theft Auto: San Andreas</div>
+            <div class="mix MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dofus.jpg" alt="Dofus">Dofus</div>
+            <div class="mix Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Cooking%20Simulator.jpg" alt="Cooking Simulator">Cooking Simulator</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Reventure.jpg" alt="Reventure">Reventure</div>
+            <div class="mix FPS Shooter Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./XERA:%20Survival.jpg" alt="XERA: Survival">XERA: Survival</div>
+            <div class="mix OpenWorld AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Outer%20Wilds.jpg" alt="Outer Wilds">Outer Wilds</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/City%20of%20Brass.jpg" alt="City of Brass">City of Brass</div>
+            <div class="mix RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Princess%20Connect%21%20Re:%20Dive.jpg" alt="Princess Connect! Re: Dive">Princess Connect! Re: Dive</div>
+            <div class="mix Survival OpenWorld AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Subnautica.jpg" alt="Subnautica">Subnautica</div>
+            <div class="mix Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Hearts%20of%20Iron%20IV.jpg" alt="Hearts of Iron IV">Hearts of Iron IV</div>
+            <div class="mix AdventureGame Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Witcher%203:%20Wild%20Hunt.jpg" alt="The Witcher 3: Wild Hunt">The Witcher 3: Wild Hunt</div>
+            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Shadowverse.jpg" alt="Shadowverse">Shadowverse</div>
+            <div class="mix Platformer"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Super%20Mario%20World.jpg" alt="Super Mario World">Super Mario World</div>
+            <div class="mix DrivingRacingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/TrackMania%C2%B2%20Stadium.jpg" alt="TrackMania² Stadium">TrackMania² Stadium</div>
+            <div class="mix Strategy CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Chess.jpg" alt="Chess">Chess</div>
+            <div class="mix AdventureGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Sekiro:%20Shadows%20Die%20Twice.jpg" alt="Sekiro: Shadows Die Twice">Sekiro: Shadows Die Twice</div>
+            <div class="mix Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Cities:%20Skylines.jpg" alt="Cities: Skylines">Cities: Skylines</div>
+            <div class="mix Shooter FPS RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Fallout:%20New%20Vegas.jpg" alt="Fallout: New Vegas">Fallout: New Vegas</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Fitness%20Boxing.jpg" alt="Fitness Boxing">Fitness Boxing</div>
+            <div class="mix Simulation Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Barotrauma.jpg" alt="Barotrauma">Barotrauma</div>
+            <div class="mix RPG Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/It%20Lurks%20Below.jpg" alt="It Lurks Below">It Lurks Below</div>
+            <div class="mix Horror Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Bloodborne.jpg" alt="Bloodborne">Bloodborne</div>
+            <div class="mix Roguelike"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Binding%20of%20Isaac:%20Afterbirth.jpg" alt="The Binding of Isaac: Afterbirth">The Binding of Isaac: Afterbirth</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20King%20of%20Fighters%20%2798:%20The%20Slugfest.jpg" alt="The King of Fighters '98: The Slugfest">The King of Fighters '98: The Slugfest</div>
+            <div class="mix Horror Roguelike RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Darkest%20Dungeon.jpg" alt="Darkest Dungeon">Darkest Dungeon</div>
+            <div class="mix Horror Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Left%204%20Dead%202.jpg" alt="Left 4 Dead 2">Left 4 Dead 2</div>
+            <div class="mix HiddenObjects Horror Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Silent%20Hill.jpg" alt="Silent Hill">Silent Hill</div>
+            <div class="mix RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Epic%20Seven.jpg" alt="Epic Seven">Epic Seven</div>
+            <div class="mix Fighting"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Mortal%20Kombat%2011.jpg" alt="Mortal Kombat 11">Mortal Kombat 11</div>
+            <div class="mix RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Summoners%20War:%20Sky%20Arena.jpg" alt="Summoners War: Sky Arena">Summoners War: Sky Arena</div>
+            <div class="mix Horror"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Five%20Nights%20at%20Freddy%27s%20VR:%20Help%20Wanted.jpg" alt="Five Nights at Freddy's VR: Help Wanted">Five Nights at Freddy's VR: Help Wanted</div>
+            <div class="mix FPS Shooter Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/PUBG%20MOBILE.jpg" alt="PUBG MOBILE">PUBG MOBILE</div>
+            <div class="mix DrivingRacingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Mario%20Kart%208.jpg" alt="Mario Kart 8">Mario Kart 8</div>
+            <div class="mix SportsGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Madden%20NFL%2019.jpg" alt="Madden NFL 19">Madden NFL 19</div>
+            <div class="mix RPG MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/RuneScape.jpg" alt="RuneScape">RuneScape</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Tricky%20Towers.jpg" alt="Tricky Towers">Tricky Towers</div>
+            <div class="mix IRL"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Special%20Events.jpg" alt="Special Events">Special Events</div>
+            <div class="mix RPG Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Witcher.jpg" alt="The Witcher">The Witcher</div>
+            <div class="mix MMORPG Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Conqueror%27s%20Blade.jpg" alt="Conqueror's Blade">Conqueror's Blade</div>
+            <div class="mix MOBA"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Arena%20of%20Valor.jpg" alt="Arena of Valor">Arena of Valor</div>
+            <div class="mix Compilation CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Jackbox%20Party%20Pack%203.jpg" alt="The Jackbox Party Pack 3">The Jackbox Party Pack 3</div>
+            <div class="mix Stealth Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Elder%20Scrolls%20IV:%20Oblivion.jpg" alt="The Elder Scrolls IV: Oblivion">The Elder Scrolls IV: Oblivion</div>
+            <div class="mix Horror Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dark%20Souls.jpg" alt="Dark Souls">Dark Souls</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Stream%20Avatars.jpg" alt="Stream Avatars">Stream Avatars</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Langrisser%20Mobile.jpg" alt="Langrisser Mobile">Langrisser Mobile</div>
+            <div class="mix Shooter Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Realm%20Royale.jpg" alt="Realm Royale">Realm Royale</div>
+            <div class="mix Action Simulation RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Yakuza%200.jpg" alt="Yakuza 0">Yakuza 0</div>
+            <div class="mix OpenWorld Stealth RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Elder%20Scrolls%20V:%20Skyrim.jpg" alt="The Elder Scrolls V: Skyrim">The Elder Scrolls V: Skyrim</div>
+            <div class="mix RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dungeons%20&%20Dragons.jpg" alt="Dungeons & Dragons">Dungeons & Dragons</div>
+            <div class="mix MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Lost%20Ark%20Online.jpg" alt="Lost Ark Online">Lost Ark Online</div>
+            <div class="mix RTS Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Total%20War:%20Warhammer%20II.jpg" alt="Total War: Warhammer II">Total War: Warhammer II</div>
+            <div class="mix OpenWorld Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Red%20Dead%20Redemption%202.jpg" alt="Red Dead Redemption 2">Red Dead Redemption 2</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/PixARK.jpg" alt="PixARK">PixARK</div>
+            <div class="mix AdventureGame Action Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Rust.jpg" alt="Rust">Rust</div>
+            <div class="mix Horror Action Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Resident%20Evil%202.jpg" alt="Resident Evil 2">Resident Evil 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Balancelot.jpg" alt="Balancelot">Balancelot</div>
+            <div class="mix CardBoardGame RTS Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Clash%20Royale.jpg" alt="Clash Royale">Clash Royale</div>
+            <div class="mix Simulation DrivingRacingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/iRacing.com.jpg" alt="iRacing.com">iRacing.com</div>
+            <div class="mix MMORPG Survival"><img src="https://static-cdn.jtvnw.net/ttv-boxart/ATLAS.jpg" alt="ATLAS">ATLAS</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Super%20Mario%20Bros.%203.jpg" alt="Super Mario Bros. 3">Super Mario Bros. 3</div>
+            <div class="mix Platformer DrivingRacingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Trials%20Rising.jpg" alt="Trials Rising">Trials Rising</div>
+            <div class="mix OpenWorld Stealth Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Legend%20of%20Zelda:%20Breath%20of%20the%20Wild.jpg" alt="The Legend of Zelda: Breath of the Wild">The Legend of Zelda: Breath of the Wild</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Banner%20of%20the%20Maid.jpg" alt="Banner of the Maid">Banner of the Maid</div>
+            <div class="mix RTS Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Age%20of%20Empires%20II.jpg" alt="Age of Empires II">Age of Empires II</div>
+            <div class="mix Simulation Action Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Star%20Citizen.jpg" alt="Star Citizen">Star Citizen</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Rogue%20Legacy.jpg" alt="Rogue Legacy">Rogue Legacy</div>
+            <div class="mix CardBoardGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pummel%20Party.jpg" alt="Pummel Party">Pummel Party</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Witcher%202:%20Assassins%20of%20Kings.jpg" alt="The Witcher 2: Assassins of Kings">The Witcher 2: Assassins of Kings</div>
+            <div class="mix RPG Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Assassin%27s%20Creed%20Odyssey.jpg" alt="Assassin's Creed Odyssey">Assassin's Creed Odyssey</div>
+            <div class="mix IndieGame Puzzle"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Human:%20Fall%20Flat.jpg" alt="Human: Fall Flat">Human: Fall Flat</div>
+            <div class="mix SportsGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/WWE%202K19.jpg" alt="WWE 2K19">WWE 2K19</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Super%20Bunny%20Man.jpg" alt="Super Bunny Man">Super Bunny Man</div>
+            <div class="mix SportsGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/MLB%20The%20Show%2019.jpg" alt="MLB The Show 19">MLB The Show 19</div>
+            <div class="mix Simulation SportsGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Football%20Manager%202019.jpg" alt="Football Manager 2019">Football Manager 2019</div>
+            <div class="mix Roguelike CardBoardGame Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Slay%20the%20Spire.jpg" alt="Slay the Spire">Slay the Spire</div>
+            <div class="mix Survival Horror AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Outlast.jpg" alt="Outlast">Outlast</div>
+            <div class="mix Action Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Void%20Bastards.jpg" alt="Void Bastards">Void Bastards</div>
+            <div class="mix RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Final%20Fantasy%20VII.jpg" alt="Final Fantasy VII">Final Fantasy VII</div>
+            <div class="mix Horror Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Gears%20of%20War%204.jpg" alt="Gears of War 4">Gears of War 4</div>
+            <div class="mix Fighting"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dragon%20Ball%20FighterZ.jpg" alt="Dragon Ball FighterZ">Dragon Ball FighterZ</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Legend%20of%20Zelda:%20A%20Link%20to%20the%20Past.jpg" alt="The Legend of Zelda: A Link to the Past">The Legend of Zelda: A Link to the Past</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Jump%20King.jpg" alt="Jump King">Jump King</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Otaku%27s%20Adventure.jpg" alt="Otaku's Adventure">Otaku's Adventure</div>
+            <div class="mix IndieGame FlightSimulator"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Kerbal%20Space%20Program.jpg" alt="Kerbal Space Program">Kerbal Space Program</div>
+            <div class="mix SportsGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/NHL%2019.jpg" alt="NHL 19">NHL 19</div>
+            <div class="mix IndieGame Platformer"><img src="https://static-cdn.jtvnw.net/ttv-boxart/A%20Hat%20in%20Time.jpg" alt="A Hat in Time">A Hat in Time</div>
+            <div class="mix IndieGame Roguelike Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Don%27t%20Starve%20Together.jpg" alt="Don't Starve Together">Don't Starve Together</div>
+            <div class="mix Shooter FPS Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Squad.jpg" alt="Squad">Squad</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Board%20Games.jpg" alt="Board Games">Board Games</div>
+            <div class="mix Fighting"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Granblue%20Fantasy:%20Versus.jpg" alt="Granblue Fantasy: Versus">Granblue Fantasy: Versus</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Wrestling.jpg" alt="Wrestling">Wrestling</div>
+            <div class="mix RPG Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Warhammer:%20Chaosbane.jpg" alt="Warhammer: Chaosbane">Warhammer: Chaosbane</div>
+            <div class="mix Fighting Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Super%20Smash%20Bros.%20Melee.jpg" alt="Super Smash Bros. Melee">Super Smash Bros. Melee</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Worms%20W.M.D.jpg" alt="Worms W.M.D">Worms W.M.D</div>
+            <div class="mix OpenWorld Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dark%20Souls%20II.jpg" alt="Dark Souls II">Dark Souls II</div>
+            <div class="mix Horror Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Hunt:%20Showdown.jpg" alt="Hunt: Showdown">Hunt: Showdown</div>
+            <div class="mix Shooter FPS Compilation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Halo:%20The%20Master%20Chief%20Collection.jpg" alt="Halo: The Master Chief Collection">Halo: The Master Chief Collection</div>
+            <div class="mix Horror RPG Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Code%20Vein.jpg" alt="Code Vein">Code Vein</div>
+            <div class="mix Platformer Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Mega%20Man%20X.jpg" alt="Mega Man X">Mega Man X</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/GRID%202.jpg" alt="GRID 2">GRID 2</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Call%20of%20Duty:%20Black%20Ops%20III.jpg" alt="Call of Duty: Black Ops III">Call of Duty: Black Ops III</div>
+            <div class="mix Horror Puzzle AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Visage.jpg" alt="Visage">Visage</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Yakuza%206:%20The%20Song%20of%20Life.jpg" alt="Yakuza 6: The Song of Life">Yakuza 6: The Song of Life</div>
+            <div class="mix Roguelike RPG Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./FTL:%20Faster%20Than%20Light.jpg" alt="FTL: Faster Than Light">FTL: Faster Than Light</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Barbie%20and%20the%20Magic%20of%20Pegasus.jpg" alt="Barbie and the Magic of Pegasus">Barbie and the Magic of Pegasus</div>
+            <div class="mix OpenWorld MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Tera.jpg" alt="Tera">Tera</div>
+            <div class="mix Shooter FPS Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Warface.jpg" alt="Warface">Warface</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Mega%20Man.jpg" alt="Mega Man">Mega Man</div>
+            <div class="mix RTS Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Age%20of%20Mythology.jpg" alt="Age of Mythology">Age of Mythology</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Catherine.jpg" alt="Catherine">Catherine</div>
+            <div class="mix OpenWorld AdventureGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Satisfactory.jpg" alt="Satisfactory">Satisfactory</div>
+            <div class="mix OpenWorld Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./theHunter:%20Call%20of%20the%20Wild.jpg" alt="theHunter: Call of the Wild">theHunter: Call of the Wild</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./S.T.A.L.K.E.R.:%20Clear%20Sky.jpg" alt="S.T.A.L.K.E.R.: Clear Sky">S.T.A.L.K.E.R.: Clear Sky</div>
+            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Yu-Gi-Oh%21%20Duel%20Links.jpg" alt="Yu-Gi-Oh! Duel Links">Yu-Gi-Oh! Duel Links</div>
+            <div class="mix MOBA Shooter Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Brawl%20Stars.jpg" alt="Brawl Stars">Brawl Stars</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Guild%202:%20Renaissance.jpg" alt="The Guild 2: Renaissance">The Guild 2: Renaissance</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Project%20Winter.jpg" alt="Project Winter">Project Winter</div>
+            <div class="mix OpenWorld Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Kingdom%20Come:%20Deliverance.jpg" alt="Kingdom Come: Deliverance">Kingdom Come: Deliverance</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Football.jpg" alt="Football">Football</div>
+            <div class="mix IndieGame Simulation RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/My%20Time%20at%20Portia.jpg" alt="My Time at Portia">My Time at Portia</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Champion%20League.jpg" alt="Champion League">Champion League</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Vectronom.jpg" alt="Vectronom">Vectronom</div>
+            <div class="mix Compilation CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Jackbox%20Party%20Pack%204.jpg" alt="The Jackbox Party Pack 4">The Jackbox Party Pack 4</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Corpse%20Party.jpg" alt="Corpse Party">Corpse Party</div>
+            <div class="mix Stealth Shooter Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Uncharted%204:%20A%20Thief%27s%20End.jpg" alt="Uncharted 4: A Thief's End">Uncharted 4: A Thief's End</div>
+            <div class="mix MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Guild%20Wars%202.jpg" alt="Guild Wars 2">Guild Wars 2</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Modern%20Warfare%202.jpg" alt="Modern Warfare 2">Modern Warfare 2</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Yakuza%20Kiwami%202.jpg" alt="Yakuza Kiwami 2">Yakuza Kiwami 2</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/God%20of%20War.jpg" alt="God of War">God of War</div>
+            <div class="mix Shooter FPS Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Arma%203.jpg" alt="Arma 3">Arma 3</div>
+            <div class="mix AdventureGame RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20Emerald.jpg" alt="Pokémon Emerald">Pokémon Emerald</div>
+            <div class="mix Puzzle"><img src="https://static-cdn.jtvnw.net/ttv-boxart/BaBa%20Is%20You.jpg" alt="BaBa Is You">BaBa Is You</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Quick%20Draw.jpg" alt="Quick Draw">Quick Draw</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Star%20Trek:%20Deep%20Space%20Nine%20-%20Harbinger.jpg" alt="Star Trek: Deep Space Nine - Harbinger">Star Trek: Deep Space Nine - Harbinger</div>
+            <div class="mix OpenWorld Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Farming%20Simulator%2019.jpg" alt="Farming Simulator 19">Farming Simulator 19</div>
+            <div class="mix Platformer"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Donkey%20Kong%20Country:%20Tropical%20Freeze.jpg" alt="Donkey Kong Country: Tropical Freeze">Donkey Kong Country: Tropical Freeze</div>
+            <div class="mix Shooter FPS RTS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Call%20of%20Duty:%20Black%20Ops%20II.jpg" alt="Call of Duty: Black Ops II">Call of Duty: Black Ops II</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Getting%20Over%20It.jpg" alt="Getting Over It">Getting Over It</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Strange%20Brigade.jpg" alt="Strange Brigade">Strange Brigade</div>
+            <div class="mix Simulation DrivingRacingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Euro%20Truck%20Simulator%202.jpg" alt="Euro Truck Simulator 2">Euro Truck Simulator 2</div>
+            <div class="mix Horror Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Parasite%20Eve%20II.jpg" alt="Parasite Eve II">Parasite Eve II</div>
+            <div class="mix Puzzle AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Phoenix%20Wright:%20Ace%20Attorney%20Trilogy%20HD.jpg" alt="Phoenix Wright: Ace Attorney Trilogy HD">Phoenix Wright: Ace Attorney Trilogy HD</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/F1%202013.jpg" alt="F1 2013">F1 2013</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Spellbreak.jpg" alt="Spellbreak">Spellbreak</div>
+            <div class="mix IndieGame Metroidvania Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Gato%20Roboto.jpg" alt="Gato Roboto">Gato Roboto</div>
+            <div class="mix RPG Strategy Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Diablo.jpg" alt="Diablo">Diablo</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Prince%20of%20Persia:%20The%20Sands%20of%20Time.jpg" alt="Prince of Persia: The Sands of Time">Prince of Persia: The Sands of Time</div>
+            <div class="mix Platformer Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./SpongeBob%20SquarePants:%20Battle%20for%20Bikini%20Bottom.jpg" alt="SpongeBob SquarePants: Battle for Bikini Bottom">SpongeBob SquarePants: Battle for Bikini Bottom</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Garry%27s%20Mod.jpg" alt="Garry's Mod">Garry's Mod</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Boxing.jpg" alt="Boxing">Boxing</div>
+            <div class="mix FPS Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Rising%20Storm%202:%20Vietnam.jpg" alt="Rising Storm 2: Vietnam">Rising Storm 2: Vietnam</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Boxing%20Fight.jpg" alt="Boxing Fight">Boxing Fight</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./ToeJam%20&%20Earl:%20Back%20in%20the%20Groove%21.jpg" alt="ToeJam & Earl: Back in the Groove!">ToeJam & Earl: Back in the Groove!</div>
+            <div class="mix Action Platformer Puzzle"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Spelunky.jpg" alt="Spelunky">Spelunky</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Call%20of%20Duty:%20Modern%20Warfare%20Remastered.jpg" alt="Call of Duty: Modern Warfare Remastered">Call of Duty: Modern Warfare Remastered</div>
+            <div class="mix OpenWorld Simulation DrivingRacingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/American%20Truck%20Simulator.jpg" alt="American Truck Simulator">American Truck Simulator</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Mosh%20Pit%20Simulator.jpg" alt="Mosh Pit Simulator">Mosh Pit Simulator</div>
+            <div class="mix Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Super%20Seducer.jpg" alt="Super Seducer">Super Seducer</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Monster%20Rancher%202.jpg" alt="Monster Rancher 2">Monster Rancher 2</div>
+            <div class="mix Puzzle"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Tetris%2099.jpg" alt="Tetris 99">Tetris 99</div>
+            <div class="mix Horror"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Vampire:%20The%20Masquerade.jpg" alt="Vampire: The Masquerade">Vampire: The Masquerade</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Vacation%20Simulator.jpg" alt="Vacation Simulator">Vacation Simulator</div>
+            <div class="mix Horror Action Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Last%20of%20Us.jpg" alt="The Last of Us">The Last of Us</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Super%20Robot%20Taisen%20T.jpg" alt="Super Robot Taisen T">Super Robot Taisen T</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Winnie%20the%20Pooh%27s%20Home%20Run%20Derby%21.jpg" alt="Winnie the Pooh's Home Run Derby!">Winnie the Pooh's Home Run Derby!</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/World%20War%20Z.jpg" alt="World War Z">World War Z</div>
+            <div class="mix OpenWorld Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Legend%20of%20Zelda:%20Skyward%20Sword.jpg" alt="The Legend of Zelda: Skyward Sword">The Legend of Zelda: Skyward Sword</div>
+            <div class="mix Horror Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Alien:%20Isolation.jpg" alt="Alien: Isolation">Alien: Isolation</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Splitgate:%20Arena%20Warfare.jpg" alt="Splitgate: Arena Warfare">Splitgate: Arena Warfare</div>
+            <div class="mix AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Detroit:%20Become%20Human.jpg" alt="Detroit: Become Human">Detroit: Become Human</div>
+            <div class="mix CardBoardGame Simulation Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Tabletop%20Simulator.jpg" alt="Tabletop Simulator">Tabletop Simulator</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Batman:%20Arkham%20Asylum.jpg" alt="Batman: Arkham Asylum">Batman: Arkham Asylum</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Crystal%20Crisis.jpg" alt="Crystal Crisis">Crystal Crisis</div>
+            <div class="mix OpenWorld Shooter RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Fallout%2076.jpg" alt="Fallout 76">Fallout 76</div>
+            <div class="mix Platformer Compilation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Spyro%20Reignited%20Trilogy.jpg" alt="Spyro Reignited Trilogy">Spyro Reignited Trilogy</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Shadow%20Warrior.jpg" alt="Shadow Warrior">Shadow Warrior</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Digimon%20World%20DS.jpg" alt="Digimon World DS">Digimon World DS</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Code%20of%20Princess.jpg" alt="Code of Princess">Code of Princess</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Robot%20Unicorn%20Attack.jpg" alt="Robot Unicorn Attack">Robot Unicorn Attack</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Paper%20Mario.jpg" alt="Paper Mario">Paper Mario</div>
+            <div class="mix Fighting"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Soulcalibur%20VI.jpg" alt="Soulcalibur VI">Soulcalibur VI</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Kartrider.jpg" alt="Kartrider">Kartrider</div>
+            <div class="mix Compilation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Tower%20Unite.jpg" alt="Tower Unite">Tower Unite</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Demon%27s%20Souls.jpg" alt="Demon's Souls">Demon's Souls</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Twitch%20Plays.jpg" alt="Twitch Plays">Twitch Plays</div>
+            <div class="mix IndieGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Risk%20of%20Rain%202.jpg" alt="Risk of Rain 2">Risk of Rain 2</div>
+            <div class="mix MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Albion%20Online.jpg" alt="Albion Online">Albion Online</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pit%20People.jpg" alt="Pit People">Pit People</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dreams.jpg" alt="Dreams">Dreams</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Yu-Gi-Oh%21%20TRADING%20CARD%20GAME.jpg" alt="Yu-Gi-Oh! TRADING CARD GAME">Yu-Gi-Oh! TRADING CARD GAME</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Insurgency:%20Sandstorm.jpg" alt="Insurgency: Sandstorm">Insurgency: Sandstorm</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Silent%20Hill%204:%20The%20Room.jpg" alt="Silent Hill 4: The Room">Silent Hill 4: The Room</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Bloodstained:%20Curse%20of%20the%20Moon.jpg" alt="Bloodstained: Curse of the Moon">Bloodstained: Curse of the Moon</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Sonic%20the%20Hedgehog%202.jpg" alt="Sonic the Hedgehog 2">Sonic the Hedgehog 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Nevermind.jpg" alt="Nevermind">Nevermind</div>
+            <div class="mix AdventureGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Devil%20May%20Cry%205.jpg" alt="Devil May Cry 5">Devil May Cry 5</div>
+            <div class="mix Platformer"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Sonic%20Mania.jpg" alt="Sonic Mania">Sonic Mania</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dead%20Space%203.jpg" alt="Dead Space 3">Dead Space 3</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Stay%20Close.jpg" alt="Stay Close">Stay Close</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Judgement.jpg" alt="Judgement">Judgement</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Manual%20Samuel.jpg" alt="Manual Samuel">Manual Samuel</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Memento%20Mori%202.jpg" alt="Memento Mori 2">Memento Mori 2</div>
+            <div class="mix Survival Horror Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Resident%20Evil%203:%20Nemesis.jpg" alt="Resident Evil 3: Nemesis">Resident Evil 3: Nemesis</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Mario%20is%20Missing%21.jpg" alt="Mario is Missing!">Mario is Missing!</div>
+            <div class="mix RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20Ultra%20Sun/Ultra%20Moon.jpg" alt="Pokémon Ultra Sun/Ultra Moon">Pokémon Ultra Sun/Ultra Moon</div>
+            <div class="mix Platformer Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Kao%20the%20Kangaroo%20Round%202.jpg" alt="Kao the Kangaroo Round 2">Kao the Kangaroo Round 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Dandelion:%20Wishes%20Brought%20to%20You.jpg" alt="Dandelion: Wishes Brought to You">Dandelion: Wishes Brought to You</div>
+            <div class="mix Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Super%20Animal%20Royale.jpg" alt="Super Animal Royale">Super Animal Royale</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Machinarium.jpg" alt="Machinarium">Machinarium</div>
+            <div class="mix OpenWorld Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/SCUM.jpg" alt="SCUM">SCUM</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Jackbox%20Party%20Pack%202.jpg" alt="The Jackbox Party Pack 2">The Jackbox Party Pack 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Myths.jpg" alt="World of Myths">World of Myths</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Drawful%202.jpg" alt="Drawful 2">Drawful 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Mushihime-Sama.jpg" alt="Mushihime-Sama">Mushihime-Sama</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Universim.jpg" alt="The Universim">The Universim</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Tales%20Runner.jpg" alt="Tales Runner">Tales Runner</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Metal%20Slug%204.jpg" alt="Metal Slug 4">Metal Slug 4</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Dishonored:%20Death%20of%20the%20Outsider.jpg" alt="Dishonored: Death of the Outsider">Dishonored: Death of the Outsider</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Love%20Beat.jpg" alt="Love Beat">Love Beat</div>
+            <div class="mix Shooter FPS Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/7%20Days%20to%20Die.jpg" alt="7 Days to Die">7 Days to Die</div>
+            <div class="mix OpenWorld Simulation DrivingRacingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/My%20Summer%20Car.jpg" alt="My Summer Car">My Summer Car</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Octahedron.jpg" alt="Octahedron">Octahedron</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Kids.jpg" alt="Kids">Kids</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Hand%20Simulator.jpg" alt="Hand Simulator">Hand Simulator</div>
+            <div class="mix Stealth Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Metal%20Gear%20Rising:%20Revengeance.jpg" alt="Metal Gear Rising: Revengeance">Metal Gear Rising: Revengeance</div>
+            <div class="mix RTS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Warcraft%20III:%20Reign%20of%20Chaos.jpg" alt="Warcraft III: Reign of Chaos">Warcraft III: Reign of Chaos</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Sudden%20Attack.jpg" alt="Sudden Attack">Sudden Attack</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Rivals%20of%20Aether.jpg" alt="Rivals of Aether">Rivals of Aether</div>
+            <div class="mix AdventureGame Strategy Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Metal%20Gear%20Solid.jpg" alt="Metal Gear Solid">Metal Gear Solid</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Blood%20&%20Truth.jpg" alt="Blood & Truth">Blood & Truth</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Heavenly%20Sword.jpg" alt="Heavenly Sword">Heavenly Sword</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Counter-Strike:%20Source.jpg" alt="Counter-Strike: Source">Counter-Strike: Source</div>
+            <div class="mix IRL"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Sports%20&%20Fitness.jpg" alt="Sports & Fitness">Sports & Fitness</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Overcooked%21%202.jpg" alt="Overcooked! 2">Overcooked! 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Hector:%20Badge%20of%20Carnage.jpg" alt="Hector: Badge of Carnage">Hector: Badge of Carnage</div>
+            <div class="mix DrivingRacingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dirt%20Rally%202.0.jpg" alt="Dirt Rally 2.0">Dirt Rally 2.0</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Guardians%20of%20Ember.jpg" alt="Guardians of Ember">Guardians of Ember</div>
+            <div class="mix RhythmMusicGame Shooter AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Danganronpa:%20Trigger%20Happy%20Havoc.jpg" alt="Danganronpa: Trigger Happy Havoc">Danganronpa: Trigger Happy Havoc</div>
+            <div class="mix Horror Platformer Puzzle"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Little%20Nightmares.jpg" alt="Little Nightmares">Little Nightmares</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Rick%20and%20Morty%27s%20Rushed%20Licensed%20Adventure.jpg" alt="Rick and Morty's Rushed Licensed Adventure">Rick and Morty's Rushed Licensed Adventure</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Mario%20Kart:%20Double%20Dash%21%21.jpg" alt="Mario Kart: Double Dash!!">Mario Kart: Double Dash!!</div>
+            <div class="mix RTS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Conan%20Unconquered.jpg" alt="Conan Unconquered">Conan Unconquered</div>
+            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Go.jpg" alt="Go">Go</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Street%20Boyz.jpg" alt="Street Boyz">Street Boyz</div>
+            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Eternal.jpg" alt="Eternal">Eternal</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Crusader%20Kings%20II.jpg" alt="Crusader Kings II">Crusader Kings II</div>
+            <div class="mix Fighting"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Brawlhalla.jpg" alt="Brawlhalla">Brawlhalla</div>
+            <div class="mix Horror SportsGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Golf%20With%20Your%20Friends.jpg" alt="Golf With Your Friends">Golf With Your Friends</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Rescue%20HQ%20-%20The%20Tycoon.jpg" alt="Rescue HQ - The Tycoon">Rescue HQ - The Tycoon</div>
+            <div class="mix Stealth Action Platformer"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Assassin%27s%20Creed%20II.jpg" alt="Assassin's Creed II">Assassin's Creed II</div>
+            <div class="mix RhythmMusicGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Beat%20Saber.jpg" alt="Beat Saber">Beat Saber</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Idle%20Miner%20Tycoon.jpg" alt="Idle Miner Tycoon">Idle Miner Tycoon</div>
+            <div class="mix IndieGame RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Divinity:%20Original%20Sin%20II.jpg" alt="Divinity: Original Sin II">Divinity: Original Sin II</div>
+            <div class="mix Platformer Action EducationalGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Sonic%20the%20Hedgehog.jpg" alt="Sonic the Hedgehog">Sonic the Hedgehog</div>
+            <div class="mix Strategy Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Black%20&%20White.jpg" alt="Black & White">Black & White</div>
+            <div class="mix AdventureGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Observation.jpg" alt="Observation">Observation</div>
+            <div class="mix Action Shooter RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Enter%20the%20Gungeon.jpg" alt="Enter the Gungeon">Enter the Gungeon</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/F%C3%BAtbol.jpg" alt="Fútbol">Fútbol</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Silent%20Hills.jpg" alt="Silent Hills">Silent Hills</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Octodad.jpg" alt="Octodad">Octodad</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Soccer%20Life%21.jpg" alt="Soccer Life!">Soccer Life!</div>
+            <div class="mix CardBoardGame Simulation RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20Trading%20Card%20Game.jpg" alt="Pokémon Trading Card Game">Pokémon Trading Card Game</div>
+            <div class="mix AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Life%20Is%20Strange%202.jpg" alt="Life Is Strange 2">Life Is Strange 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Mario%20Party%203.jpg" alt="Mario Party 3">Mario Party 3</div>
+            <div class="mix CardBoardGame Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Yu-Gi-Oh%21%20Legacy%20of%20the%20Duelist.jpg" alt="Yu-Gi-Oh! Legacy of the Duelist">Yu-Gi-Oh! Legacy of the Duelist</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Supraland.jpg" alt="Supraland">Supraland</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/NBA.jpg" alt="NBA">NBA</div>
+            <div class="mix RPG MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/ROBLOX.jpg" alt="ROBLOX">ROBLOX</div>
+            <div class="mix Horror Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Forest.jpg" alt="The Forest">The Forest</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Battlefield%204.jpg" alt="Battlefield 4">Battlefield 4</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/A%20Way%20Out.jpg" alt="A Way Out">A Way Out</div>
+            <div class="mix FPS Action Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Team%20Fortress%202.jpg" alt="Team Fortress 2">Team Fortress 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Agar.io.jpg" alt="Agar.io">Agar.io</div>
+            <div class="mix Platformer AdventureGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Banjo-Kazooie.jpg" alt="Banjo-Kazooie">Banjo-Kazooie</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Ultimate%20Marvel%20vs.%20Capcom%203.jpg" alt="Ultimate Marvel vs. Capcom 3">Ultimate Marvel vs. Capcom 3</div>
+            <div class="mix OpenWorld Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Rage%202.jpg" alt="Rage 2">Rage 2</div>
+            <div class="mix Action Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/BioShock.jpg" alt="BioShock">BioShock</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Toy%20Story%202.jpg" alt="Toy Story 2">Toy Story 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Trash.jpg" alt="Trash">Trash</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Uno.jpg" alt="Uno">Uno</div>
+            <div class="mix Action DrivingRacingGame RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Grand%20Theft%20Auto:%20Vice%20City.jpg" alt="Grand Theft Auto: Vice City">Grand Theft Auto: Vice City</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Chrono%20Trigger.jpg" alt="Chrono Trigger">Chrono Trigger</div>
+            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Quiplash.jpg" alt="Quiplash">Quiplash</div>
+            <div class="mix MMORPG Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dragon%20Ball%20Legends.jpg" alt="Dragon Ball Legends">Dragon Ball Legends</div>
+            <div class="mix Horror RPG Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Project%20Zomboid.jpg" alt="Project Zomboid">Project Zomboid</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Kirby:%20Nightmare%20in%20Dream%20Land.jpg" alt="Kirby: Nightmare in Dream Land">Kirby: Nightmare in Dream Land</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Virtua%20Fighter%205%20Final%20Showdown.jpg" alt="Virtua Fighter 5 Final Showdown">Virtua Fighter 5 Final Showdown</div>
+            <div class="mix IndieGame AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Astroneer.jpg" alt="Astroneer">Astroneer</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Luigi%27s%20Mansion.jpg" alt="Luigi's Mansion">Luigi's Mansion</div>
+            <div class="mix RPG Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Kingdom%20Hearts%20III.jpg" alt="Kingdom Hearts III">Kingdom Hearts III</div>
+            <div class="mix Fighting"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Under%20Night%20In-Birth%20Exe:Late%5Bst%5D.jpg" alt="Under Night In-Birth Exe:Late[st]">Under Night In-Birth Exe:Late[st]</div>
+            <div class="mix IndieGame AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Forager.jpg" alt="Forager">Forager</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Samurai%20Shodown%20II.jpg" alt="Samurai Shodown II">Samurai Shodown II</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Deponia.jpg" alt="Deponia">Deponia</div>
+            <div class="mix Stealth Horror Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Silent%20Hill%202.jpg" alt="Silent Hill 2">Silent Hill 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/SimpleRockets%202.jpg" alt="SimpleRockets 2">SimpleRockets 2</div>
+            <div class="mix Action Platformer Puzzle"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Ori%20and%20the%20Blind%20Forest.jpg" alt="Ori and the Blind Forest">Ori and the Blind Forest</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Broken%20Reality.jpg" alt="Broken Reality">Broken Reality</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Battletoads.jpg" alt="Battletoads">Battletoads</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Grand%20Theft%20Auto.jpg" alt="Grand Theft Auto">Grand Theft Auto</div>
+            <div class="mix CardBoardGame Compilation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Jackbox%20Party%20Pack%205.jpg" alt="The Jackbox Party Pack 5">The Jackbox Party Pack 5</div>
+            <div class="mix RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20HeartGold/SoulSilver.jpg" alt="Pokémon HeartGold/SoulSilver">Pokémon HeartGold/SoulSilver</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Card%20Game.jpg" alt="Card Game">Card Game</div>
+            <div class="mix AdventureGame OpenWorld Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Days%20Gone.jpg" alt="Days Gone">Days Gone</div>
+            <div class="mix PointandClick Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Sid%20Meier%27s%20Civilization%20V.jpg" alt="Sid Meier's Civilization V">Sid Meier's Civilization V</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Shakes%20and%20Fidget.jpg" alt="Shakes and Fidget">Shakes and Fidget</div>
+            <div class="mix IndieGame Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Frostpunk.jpg" alt="Frostpunk">Frostpunk</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Bio%20Inc.%20Redemption.jpg" alt="Bio Inc. Redemption">Bio Inc. Redemption</div>
+            <div class="mix Horror FPS Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Doom.jpg" alt="Doom">Doom</div>
+            <div class="mix VisualNovel Horror AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Doki%20Doki%20Literature%20Club.jpg" alt="Doki Doki Literature Club">Doki Doki Literature Club</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Universe%20Sandbox%C2%B2.jpg" alt="Universe Sandbox²">Universe Sandbox²</div>
+            <div class="mix OpenWorld Stealth Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Assassin%27s%20Creed%20III.jpg" alt="Assassin's Creed III">Assassin's Creed III</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Last%20Guardian.jpg" alt="The Last Guardian">The Last Guardian</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Sigma%20Theory.jpg" alt="Sigma Theory">Sigma Theory</div>
+            <div class="mix Simulation DrivingRacingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Assetto%20Corsa%20Competizione.jpg" alt="Assetto Corsa Competizione">Assetto Corsa Competizione</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Plants%20vs.%20Zombies:%20Garden%20Warfare%202.jpg" alt="Plants vs. Zombies: Garden Warfare 2">Plants vs. Zombies: Garden Warfare 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Papers,%20Please.jpg" alt="Papers, Please">Papers, Please</div>
+            <div class="mix Compilation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Use%20Your%20Words.jpg" alt="Use Your Words">Use Your Words</div>
+            <div class="mix Horror Puzzle AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Penumbra:%20Black%20Plague.jpg" alt="Penumbra: Black Plague">Penumbra: Black Plague</div>
+            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Monopoly%20Plus.jpg" alt="Monopoly Plus">Monopoly Plus</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pinturillo%202.jpg" alt="Pinturillo 2">Pinturillo 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Joy%20of%20Creation.jpg" alt="The Joy of Creation">The Joy of Creation</div>
+            <div class="mix AdventureGame Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Sonic%20Adventure%202:%20Battle.jpg" alt="Sonic Adventure 2: Battle">Sonic Adventure 2: Battle</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Blackjack.jpg" alt="Blackjack">Blackjack</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/L.A.%20Noire.jpg" alt="L.A. Noire">L.A. Noire</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Indiana%20Jones%20and%20the%20Fate%20of%20Atlantis.jpg" alt="Indiana Jones and the Fate of Atlantis">Indiana Jones and the Fate of Atlantis</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Punch%20Line.jpg" alt="Punch Line">Punch Line</div>
+            <div class="mix Puzzle Simulation AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Welcome%20to%20the%20Game%20II.jpg" alt="Welcome to the Game II">Welcome to the Game II</div>
+            <div class="mix OpenWorld Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Gravity%20Rush.jpg" alt="Gravity Rush">Gravity Rush</div>
+            <div class="mix FPS Action Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Post%20Scriptum:%20The%20Bloody%20Seventh.jpg" alt="Post Scriptum: The Bloody Seventh">Post Scriptum: The Bloody Seventh</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Awesome%20Adventures%20of%20Captain%20Spirit.jpg" alt="The Awesome Adventures of Captain Spirit">The Awesome Adventures of Captain Spirit</div>
+            <div class="mix DrivingRacingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/F1%202018.jpg" alt="F1 2018">F1 2018</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/BirdGut.jpg" alt="BirdGut">BirdGut</div>
+            <div class="mix FPS Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Paladins.jpg" alt="Paladins">Paladins</div>
+            <div class="mix RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Tabletop%20RPGs.jpg" alt="Tabletop RPGs">Tabletop RPGs</div>
+            <div class="mix Horror Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Half-Life%202.jpg" alt="Half-Life 2">Half-Life 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Hamtaro:%20Ham-Hams%20Unite%21.jpg" alt="Hamtaro: Ham-Hams Unite!">Hamtaro: Ham-Hams Unite!</div>
+            <div class="mix Metroidvania Action Platformer"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Hollow%20Knight.jpg" alt="Hollow Knight">Hollow Knight</div>
+            <div class="mix Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Anno%201800.jpg" alt="Anno 1800">Anno 1800</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Wrestling%20Revolution%203D.jpg" alt="Wrestling Revolution 3D">Wrestling Revolution 3D</div>
+            <div class="mix Stealth RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Persona%205.jpg" alt="Persona 5">Persona 5</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Legend%20of%20Zelda:%20Oracle%20of%20Seasons.jpg" alt="The Legend of Zelda: Oracle of Seasons">The Legend of Zelda: Oracle of Seasons</div>
+            <div class="mix RTS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/They%20Are%20Billions.jpg" alt="They Are Billions">They Are Billions</div>
+            <div class="mix MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Lord%20of%20the%20Rings%20Online.jpg" alt="The Lord of the Rings Online">The Lord of the Rings Online</div>
+            <div class="mix Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Bloons%20TD%206.jpg" alt="Bloons TD 6">Bloons TD 6</div>
+            <div class="mix MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Blade%20and%20Soul.jpg" alt="Blade and Soul">Blade and Soul</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Duck%20Game.jpg" alt="Duck Game">Duck Game</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Trials%20of%20Fire.jpg" alt="Trials of Fire">Trials of Fire</div>
+            <div class="mix Horror AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Transference.jpg" alt="Transference">Transference</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Guitar%20Hero%20III:%20Legends%20of%20Rock.jpg" alt="Guitar Hero III: Legends of Rock">Guitar Hero III: Legends of Rock</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/God%20Hand.jpg" alt="God Hand">God Hand</div>
+            <div class="mix AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Raft.jpg" alt="Raft">Raft</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Secret%20of%20Mana.jpg" alt="Secret of Mana">Secret of Mana</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Seeking%20Dawn.jpg" alt="Seeking Dawn">Seeking Dawn</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Angvik.jpg" alt="Angvik">Angvik</div>
+            <div class="mix CardBoardGame RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./SteamWorld%20Quest:%20Hand%20of%20Gilgamech.jpg" alt="SteamWorld Quest: Hand of Gilgamech">SteamWorld Quest: Hand of Gilgamech</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Sherlock%20Holmes:%20Crimes%20and%20Punishments.jpg" alt="Sherlock Holmes: Crimes and Punishments">Sherlock Holmes: Crimes and Punishments</div>
+            <div class="mix Action Platformer"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Choice%20Chamber.jpg" alt="Choice Chamber">Choice Chamber</div>
+            <div class="mix CardBoardGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Kantai%20Collection.jpg" alt="Kantai Collection">Kantai Collection</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./9Dragons:%20Kung%20Fu%20Arena.jpg" alt="9Dragons: Kung Fu Arena">9Dragons: Kung Fu Arena</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Steam.jpg" alt="Steam">Steam</div>
+            <div class="mix Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20King%20of%20Fighters%20All%20Star.jpg" alt="The King of Fighters All Star">The King of Fighters All Star</div>
+            <div class="mix FlightSimulator Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Microsoft%20Flight%20Simulator%20X.jpg" alt="Microsoft Flight Simulator X">Microsoft Flight Simulator X</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Archangel.jpg" alt="Archangel">Archangel</div>
+            <div class="mix Platformer"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Mega%20Man%2011.jpg" alt="Mega Man 11">Mega Man 11</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Kio%27s%20Adventure.jpg" alt="Kio's Adventure">Kio's Adventure</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Quake%20Champions.jpg" alt="Quake Champions">Quake Champions</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Waku%20Waku%20Sweets.jpg" alt="Waku Waku Sweets">Waku Waku Sweets</div>
+            <div class="mix Horror AdventureGame Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Five%20Nights%20at%20Freddy%27s.jpg" alt="Five Nights at Freddy's">Five Nights at Freddy's</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Bus%20Simulator%2018.jpg" alt="Bus Simulator 18">Bus Simulator 18</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Just%20Dance%202014.jpg" alt="Just Dance 2014">Just Dance 2014</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Superhot.jpg" alt="Superhot">Superhot</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Contradiction:%20Spot%20The%20Liar%21.jpg" alt="Contradiction: Spot The Liar!">Contradiction: Spot The Liar!</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Doorways:%20The%20Underworld.jpg" alt="Doorways: The Underworld">Doorways: The Underworld</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Zero%20Caliber%20VR.jpg" alt="Zero Caliber VR">Zero Caliber VR</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Sam%20&%20Max%20Episode%20205:%20What%27s%20New,%20Beelzebub%3F.jpg" alt="Sam & Max Episode 205: What's New, Beelzebub?">Sam & Max Episode 205: What's New, Beelzebub?</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Guitar%20Hero%20Live.jpg" alt="Guitar Hero Live">Guitar Hero Live</div>
+            <div class="mix AdventureGame RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20Ruby/Sapphire.jpg" alt="Pokémon Ruby/Sapphire">Pokémon Ruby/Sapphire</div>
+            <div class="mix Horror Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Doom%20II:%20Hell%20on%20Earth.jpg" alt="Doom II: Hell on Earth">Doom II: Hell on Earth</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Call%20of%20Duty:%20WWII.jpg" alt="Call of Duty: WWII">Call of Duty: WWII</div>
+            <div class="mix Action Strategy Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Free%20Fire:%20Battlegrounds.jpg" alt="Free Fire: Battlegrounds">Free Fire: Battlegrounds</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Fate%20Hunters.jpg" alt="Fate Hunters">Fate Hunters</div>
+            <div class="mix RPG Action Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Dying%20Light.jpg" alt="Dying Light">Dying Light</div>
+            <div class="mix Horror Platformer Puzzle"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Inside.jpg" alt="Inside">Inside</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Super%20Dragon%20Ball%20Heroes:%20World%20Mission.jpg" alt="Super Dragon Ball Heroes: World Mission">Super Dragon Ball Heroes: World Mission</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Hitman%202.jpg" alt="Hitman 2">Hitman 2</div>
+            <div class="mix Horror"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Outlast%202.jpg" alt="Outlast 2">Outlast 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Heroes%20of%20Might%20and%20Magic%20III:%20The%20Restoration%20of%20Erathia.jpg" alt="Heroes of Might and Magic III: The Restoration of Erathia">Heroes of Might and Magic III: The Restoration of Erathia</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Late%20Shift.jpg" alt="Late Shift">Late Shift</div>
+            <div class="mix Horror AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Layers%20of%20Fear.jpg" alt="Layers of Fear">Layers of Fear</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Broforce.jpg" alt="Broforce">Broforce</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Worms%20Reloaded.jpg" alt="Worms Reloaded">Worms Reloaded</div>
+            <div class="mix OpenWorld Stealth RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Elder%20Scrolls%20III:%20Morrowind.jpg" alt="The Elder Scrolls III: Morrowind">The Elder Scrolls III: Morrowind</div>
+            <div class="mix Stealth Shooter Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Metal%20Gear%20Solid%203:%20Snake%20Eater.jpg" alt="Metal Gear Solid 3: Snake Eater">Metal Gear Solid 3: Snake Eater</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Shapeshifting%20Detective.jpg" alt="The Shapeshifting Detective">The Shapeshifting Detective</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/skribbl.io.jpg" alt="skribbl.io">skribbl.io</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Titanfall%202.jpg" alt="Titanfall 2">Titanfall 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/High%20School%20Musical.jpg" alt="High School Musical">High School Musical</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Cricket.jpg" alt="Cricket">Cricket</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Earth%20Defense%20Force:%20Iron%20Rain.jpg" alt="Earth Defense Force: Iron Rain">Earth Defense Force: Iron Rain</div>
+            <div class="mix Shooter"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Ring%20Of%20Elysium.jpg" alt="Ring Of Elysium">Ring Of Elysium</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Turok%202.jpg" alt="Turok 2">Turok 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Aliens%20Versus%20Predator.jpg" alt="Aliens Versus Predator">Aliens Versus Predator</div>
+            <div class="mix Strategy"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Europa%20Universalis%20IV.jpg" alt="Europa Universalis IV">Europa Universalis IV</div>
+            <div class="mix OpenWorld Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Metro%20Exodus.jpg" alt="Metro Exodus">Metro Exodus</div>
+            <div class="mix Metroidvania Horror Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Resident%20Evil:%20Code:%20Veronica%20X.jpg" alt="Resident Evil: Code: Veronica X">Resident Evil: Code: Veronica X</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/S.W.I.N.E..jpg" alt="S.W.I.N.E.">S.W.I.N.E.</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Cricket%20Club.jpg" alt="Cricket Club">Cricket Club</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20for%20Nintendo%20Switch%20%28Working%20Title%29.jpg" alt="Pokémon for Nintendo Switch (Working Title)">Pokémon for Nintendo Switch (Working Title)</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Detention.jpg" alt="Detention">Detention</div>
+            <div class="mix CardBoardGame GamblingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Prominence%20Poker.jpg" alt="Prominence Poker">Prominence Poker</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Desert%20Skies.jpg" alt="Desert Skies">Desert Skies</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Shattered:%20Tale%20of%20the%20Forgotten%20King.jpg" alt="Shattered: Tale of the Forgotten King">Shattered: Tale of the Forgotten King</div>
+            <div class="mix Action RPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20Black/White%20Version%202.jpg" alt="Pokémon Black/White Version 2">Pokémon Black/White Version 2</div>
+            <div class="mix IndieGame Roguelike RTS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Bad%20North.jpg" alt="Bad North">Bad North</div>
+            <div class="mix RPG Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Conan%20Exiles.jpg" alt="Conan Exiles">Conan Exiles</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Beyond%20Good%20&%20Evil%202.jpg" alt="Beyond Good & Evil 2">Beyond Good & Evil 2</div>
+            <div class="mix Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Oxygen%20Not%20Included.jpg" alt="Oxygen Not Included">Oxygen Not Included</div>
+            <div class="mix RPG Strategy Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Mount%20&%20Blade:%20Warband.jpg" alt="Mount & Blade: Warband">Mount & Blade: Warband</div>
+            <div class="mix Shooter FPS"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Call%20of%20Duty:%20Modern%20Warfare%203.jpg" alt="Call of Duty: Modern Warfare 3">Call of Duty: Modern Warfare 3</div>
+            <div class="mix VisualNovel Action AdventureGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Heavy%20Rain.jpg" alt="Heavy Rain">Heavy Rain</div>
+            <div class="mix Action MMORPG"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Metin%202.jpg" alt="Metin 2">Metin 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Worms%20Ultimate%20Mayhem.jpg" alt="Worms Ultimate Mayhem">Worms Ultimate Mayhem</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Crashday.jpg" alt="Crashday">Crashday</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./Star%20Wars:%20Dark%20Forces.jpg" alt="Star Wars: Dark Forces">Star Wars: Dark Forces</div>
+            <div class="mix Action"><img src="https://static-cdn.jtvnw.net/ttv-boxart/./The%20Legend%20of%20Zelda:%20Link%27s%20Awakening%20DX.jpg" alt="The Legend of Zelda: Link's Awakening DX">The Legend of Zelda: Link's Awakening DX</div>
+            <div class="mix Simulation DrivingRacingGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Project%20CARS%202.jpg" alt="Project CARS 2">Project CARS 2</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Stephen%27s%20Sausage%20Roll.jpg" alt="Stephen's Sausage Roll">Stephen's Sausage Roll</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/FIFA%20Soccer%2097.jpg" alt="FIFA Soccer 97">FIFA Soccer 97</div>
+            <div class="mix EducationalGame"><img src="https://static-cdn.jtvnw.net/ttv-boxart/GeoGuessr.jpg" alt="GeoGuessr">GeoGuessr</div>
+            <div class="mix Action Fighting Simulation"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Pok%C3%A9mon%20Stadium.jpg" alt="Pokémon Stadium">Pokémon Stadium</div>
+            <div class="mix Other"><img src="https://static-cdn.jtvnw.net/ttv-boxart/Mystery%20Fun%20House.jpg" alt="Mystery Fun House">Mystery Fun House</div>
             <div class="gap"></div>
             <div class="gap"></div>
             <div class="gap"></div>
@@ -469,9 +937,11 @@
             <!-- END PAGE CONTENT-->
             <footer class="page-footer">
                 <div class="font-16">
-                  By <a href="https://www.linkedin.com/in/natashaborders/">Natasha Borders</a>,
+                  By
+                  <a href="https://www.linkedin.com/in/natashaborders/">Natasha Borders</a>,
                   <a href="https://www.linkedin.com/in/jeremy-chow/">Jeremy Chow</a>, and
-                  <a href="https://www.linkedin.com/in/natashaborders/">Randy Macaraeg
+                  <a href="https://www.linkedin.com/in/natashaborders/">Randy Macaraeg</a>.
+                   Our code can be found on <a href="https://github.com/natashaborders/Twitch_Streamers_Recommender">GitHub</a>.
 
 
                 </div>
@@ -479,136 +949,6 @@
             </footer>
         </div>
     </div>
-    <!-- BEGIN THEME CONFIG PANEL-->
-    <!-- <div class="theme-config">
-        <div class="theme-config-toggle"><i class="fa fa-cog theme-config-show"></i><i class="ti-close theme-config-close"></i></div>
-        <div class="theme-config-box">
-            <div class="text-center font-18 m-b-20">SETTINGS</div>
-            <div class="font-strong">LAYOUT OPTIONS</div>
-            <div class="check-list m-b-20 m-t-10">
-                <label class="ui-checkbox ui-checkbox-gray">
-                    <input id="_fixedNavbar" type="checkbox" checked>
-                    <span class="input-span"></span>Fixed navbar</label>
-                <label class="ui-checkbox ui-checkbox-gray">
-                    <input id="_fixedlayout" type="checkbox">
-                    <span class="input-span"></span>Fixed layout</label>
-                <label class="ui-checkbox ui-checkbox-gray">
-                    <input class="js-sidebar-toggler" type="checkbox">
-                    <span class="input-span"></span>Collapse sidebar</label>
-            </div>
-            <div class="font-strong">LAYOUT STYLE</div>
-            <div class="m-t-10">
-                <label class="ui-radio ui-radio-gray m-r-10">
-                    <input type="radio" name="layout-style" value="" checked="">
-                    <span class="input-span"></span>Fluid</label>
-                <label class="ui-radio ui-radio-gray">
-                    <input type="radio" name="layout-style" value="1">
-                    <span class="input-span"></span>Boxed</label>
-            </div>
-            <div class="m-t-10 m-b-10 font-strong">THEME COLORS</div>
-            <div class="d-flex m-b-20">
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="Default">
-                    <label>
-                        <input type="radio" name="setting-theme" value="default" checked="">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color bg-white"></div>
-                        <div class="color-small bg-ebony"></div>
-                    </label>
-                </div>
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="Blue">
-                    <label>
-                        <input type="radio" name="setting-theme" value="blue">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color bg-blue"></div>
-                        <div class="color-small bg-ebony"></div>
-                    </label>
-                </div>
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="Green">
-                    <label>
-                        <input type="radio" name="setting-theme" value="green">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color bg-green"></div>
-                        <div class="color-small bg-ebony"></div>
-                    </label>
-                </div>
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="Purple">
-                    <label>
-                        <input type="radio" name="setting-theme" value="purple">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color bg-purple"></div>
-                        <div class="color-small bg-ebony"></div>
-                    </label>
-                </div>
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="Orange">
-                    <label>
-                        <input type="radio" name="setting-theme" value="orange">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color bg-orange"></div>
-                        <div class="color-small bg-ebony"></div>
-                    </label>
-                </div>
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="Pink">
-                    <label>
-                        <input type="radio" name="setting-theme" value="pink">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color bg-pink"></div>
-                        <div class="color-small bg-ebony"></div>
-                    </label>
-                </div>
-            </div>
-            <div class="d-flex">
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="White">
-                    <label>
-                        <input type="radio" name="setting-theme" value="white">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color"></div>
-                        <div class="color-small bg-silver-100"></div>
-                    </label>
-                </div>
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="Blue light">
-                    <label>
-                        <input type="radio" name="setting-theme" value="blue-light">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color bg-blue"></div>
-                        <div class="color-small bg-silver-100"></div>
-                    </label>
-                </div>
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="Green light">
-                    <label>
-                        <input type="radio" name="setting-theme" value="green-light">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color bg-green"></div>
-                        <div class="color-small bg-silver-100"></div>
-                    </label>
-                </div>
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="Purple light">
-                    <label>
-                        <input type="radio" name="setting-theme" value="purple-light">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color bg-purple"></div>
-                        <div class="color-small bg-silver-100"></div>
-                    </label>
-                </div>
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="Orange light">
-                    <label>
-                        <input type="radio" name="setting-theme" value="orange-light">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color bg-orange"></div>
-                        <div class="color-small bg-silver-100"></div>
-                    </label>
-                </div>
-                <div class="color-skin-box" data-toggle="tooltip" data-original-title="Pink light">
-                    <label>
-                        <input type="radio" name="setting-theme" value="pink-light">
-                        <span class="color-check-icon"><i class="fa fa-check"></i></span>
-                        <div class="color bg-pink"></div>
-                        <div class="color-small bg-silver-100"></div>
-                    </label>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- END THEME CONFIG PANEL-->
     <!-- BEGIN PAGA BACKDROPS-->
     <div class="sidenav-backdrop backdrop"></div>
     <div class="preloader-backdrop">

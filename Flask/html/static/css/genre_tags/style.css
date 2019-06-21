@@ -17,7 +17,7 @@ body {
 .controls {
     padding: 1rem;
     background: #333;
-    font-size: 20px;
+    font-size: 15px;
 }
 /*TOP BUTTON CONTROLS*/
 .control {
@@ -222,6 +222,12 @@ color: #91e6c7;
 color: #91e6c7;
 }
 
+.control[data-filter=".Other"],
+.control[data-toggle=".Other"]
+{
+color: #91e6c7;
+}
+
 
 .control[data-filter=".Pinball"],
 .control[data-toggle=".Pinball"]
@@ -342,14 +348,17 @@ color: #91e6c7;
 }
 
 /*TEST AREA*/
-.hidden { display: none; }
+.smol {
+  height:104px;
+  width:139px;
+}
 /* Container
 ---------------------------------------------------------------------- */
 /*Games Container*/
 .container {
     padding: 1rem;
-    text-align: justify;
-    font-size: 20px;
+    text-align: left;
+    font-size: 15px;
 }
 
 .initHidden {
@@ -428,7 +437,7 @@ color: #91e6c7;
 @media screen and (min-width: 541px) {
     .mix,
     .gap {
-        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+        width: calc(100%/6 - (((3 - 1) * 1rem) / 3));
     }
 }
 
@@ -437,7 +446,7 @@ color: #91e6c7;
 @media screen and (min-width: 961px) {
     .mix,
     .gap {
-        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+        width: calc(100%/8 - (((4 - 1) * 1rem) / 4));
     }
 }
 
@@ -446,6 +455,6 @@ color: #91e6c7;
 @media screen and (min-width: 1281px) {
     .mix,
     .gap {
-        width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
+        width: calc(100%/10 - (((5 - 1) * 1rem) / 5));
     }
 }

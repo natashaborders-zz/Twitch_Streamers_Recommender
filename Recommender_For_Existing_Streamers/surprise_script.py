@@ -19,27 +19,27 @@ with open( "./Data/genres.pkl", "rb" ) as f:
 
 # algo_genre_user = pickle.load( open( "./Data/SlopeOne_genre_model.pkl", "rb" ) )
 with open( "./Data/SlopeOne_genre_model.pkl", "rb" ) as f:
-    algo_genre_user = pickle.load(f)
+    algo_genre_base = pickle.load(f)
 
 with open( "./Data/games.pkl", "rb" ) as f:
     games = pickle.load(f)
 
 with open( "./Data/BaselineOnly_game_model.pkl", "rb" ) as f:
-    algo_game_user = pickle.load(f)
+    algo_game_base = pickle.load(f)
 
 def display_current_genres(streamer_name):
     user_genres = list(genres[genres['user_name']==streamer_name]['game_genres'])
     return user_genres
 
 recorder_genre_list = display_current_genres(streamer_name)
-full_genres = set(recorder_genre_list + streamer_genres)
+full_genres = list(set(recorder_genre_list + streamer_genres))
 
 def display_current_games(streamer_name):
     user_games = list(games[games['user_name']==streamer_name]['game_name'])
     return user_games
 
 recorder_game_list = display_current_games(streamer_name)
-full_games = set(recorder_game_list + streamer_games)
+full_games = list(set(recorder_game_list + streamer_games))
 
 #Predicting Similar Genres/Games Based on User experience (user-based similarity) #
 def get_top_n(predictions, n=10):
@@ -55,9 +55,9 @@ def get_top_n(predictions, n=10):
     return top_n
 
 genre_iids = genres['game_genres'].unique()
-genre_iids_to_predict = np.setdiff1d(genre_iids, full_genres)
+genre_iids_to_predict = np.setdiff1d(genre_iids, full_genres, assume_unique = True)
 genre_testset_personal = [[streamer_name, iid, 4.] for iid in genre_iids_to_predict]
-genre_personal_predictions = algo_genre_user.test(genre_testset_personal)
+genre_personal_predictions = algo_genre_base.test(genre_testset_personal)
 genre_top_n = get_top_n(genre_personal_predictions)
 for uid, genre_user_ratings in genre_top_n.items():
     genre_user_based_list = [iid for (iid, _) in genre_user_ratings]
@@ -65,9 +65,9 @@ for uid, genre_user_ratings in genre_top_n.items():
 
 
 game_iids = games['game_name'].unique()
-game_iids_to_predict = np.setdiff1d(game_iids, full_games)
+game_iids_to_predict = np.setdiff1d(game_iids, full_games, assume_unique = True)
 game_testset_personal = [[streamer_name, iid, 4.] for iid in game_iids_to_predict]
-game_personal_predictions = algo_game_user.test(game_testset_personal)
+game_personal_predictions = algo_game_base.test(game_testset_personal)
 game_top_n = get_top_n(game_personal_predictions)
 for uid, game_user_ratings in game_top_n.items():
     game_user_based_list = [iid for (iid, _) in game_user_ratings]

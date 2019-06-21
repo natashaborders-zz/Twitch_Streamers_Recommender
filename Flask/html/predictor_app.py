@@ -3,6 +3,7 @@ from flask import request
 from recommender_api import make_prediction
 from flask import jsonify
 import pickle
+import random
 
 # Initialize the app
 
@@ -10,20 +11,24 @@ app = flask.Flask(__name__)
 # form_basic is the prediction site
 @app.route("/form_basic.html", methods=["GET"])
 def form():
-    input_values = 0
-    recommendations = 0
-    pic_url=0
-    # First time loading page, nothing is passed. After fields are entered, pass 
+    input_values = None
+    recommendations = {}
+    pic_urls = []
+    # First time loading page, nothing is passed. After fields are entered, pass
     # those arguments into model
     if request.args:
         username_in = str(request.args['username_in'])
         genres_in = str(request.args['genres_in'])
         games_in = str(request.args['games_in'])
-        input_values, recommendations, _= make_prediction(username_in, genres_in, games_in)
+        input_values, recommendations, pic_urls = make_prediction(username_in, genres_in, games_in)
 
     return flask.render_template('form_basic.html',
                                      user_input=input_values,
-                                     recommendation=recommendations)
+                                     recommendation=recommendations,
+                                     pic_url=pic_urls,
+                                     game_rec=zip(recommendations.get('game_recommendations', []),pic_urls))
+
+
 
 # Landing page
 
